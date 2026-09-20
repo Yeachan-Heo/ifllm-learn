@@ -22,6 +22,39 @@ It makes the comparison runnable—and keeps the failures visible.
 
 [Quick start](#quick-start) · [Measured demos](#measured-demos) · [Your own data](#your-own-data) · [How it works](#how-it-works) · [Limitations](#limitations)
 
+![Measured frozen-versus-LoRA results across all four scoped demos](docs/demo-overview.svg)
+
+## Explore the visual lab
+
+An interactive, local-only dashboard makes the recorded experiments inspectable:
+
+- Switch between **Banking, Out of scope, Contracts, and Bitcoin**.
+- Compare frozen and trained accuracy on a shared scale.
+- Inspect **calibration curves, confusion matrices, and actual training-loss traces**.
+- Browse held-out predictions, filter mistakes, and compare their choice probabilities.
+- Follow each dataset back to its measured report, including regressions and scope limits.
+
+[Desktop screenshot](docs/demo-dashboard.png) · [Mobile screenshot](docs/demo-mobile.png)
+Both are captures of the running dashboard, not design mockups.
+
+```bash
+# From the repository root; no model, GPU, npm install, or API key needed.
+python3 -m http.server 8765 --bind 127.0.0.1
+```
+
+Open **http://127.0.0.1:8765/demo/**. This is a replay of recorded results, **not
+live browser inference**. Original benchmark input text is not included in the
+viewer. No CDN assets, analytics, or external services are required.
+
+The README graphic and dashboard data are generated from the retained result files:
+
+```bash
+python3 examples/build_visual_demo.py          # rebuild assets
+python3 examples/build_visual_demo.py --check  # reject stale visuals
+```
+
+The local viewer does not publish the private repository or enable GitHub Pages.
+
 ## What you get
 
 - **Actual supervised learning.** MLX LoRA updates on the correct choice's cross-entropy—not temperature-only tuning.

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101813">
+  <title>ifllm-learn — The decision lab</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#lab">Skip to experiment</a>
+  <div class="shell">
+    <header class="masthead"><a href="../" class="brand">ifllm<span>-learn</span></a><span class="eyebrow">The decision lab / 01</span></header>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div><p class="status"><span aria-hidden="true" class="dot"></span>Recorded experiments · not live inference</p><h1 id="hero-title">Train the if.<br><span>Keep the receipts.</span></h1><p class="intro">A small adapter. A measurable decision. Explore what changed when a frozen model learned from labeled data—including what got worse.</p></div>
+        <aside class="hero-note"><span class="eyebrow">Evidence, not a victory lap</span><p>Four scoped experiments.<br>Every held-out prediction.<br>No hidden regressions.</p><span class="fine">Local LoRA · fixed budgets · single seeds</span></aside>
+      </section>
+      <div id="load-status" role="status">Loading recorded experiment data…</div>
+      <noscript><p class="warning">JavaScript is required to explore the recorded results. The raw reports are in the results directory.</p></noscript>
+      <section id="lab" hidden aria-label="Experiment explorer">
+        <div class="section-kicker"><span class="eyebrow">01 / Choose an experiment</span><span class="fine">Same workflow. Different outcomes.</span></div>
+        <div id="dataset-tabs" class="tabs" role="tablist" aria-label="Datasets"></div>
+        <div id="experiment" role="tabpanel" tabindex="0">
+          <div class="experiment-heading"><div><p id="dataset-scope" class="eyebrow"></p><h2 id="dataset-title"></h2></div><a id="report-link" class="text-link">Raw report ↗</a></div>
+          <p id="scope-note" class="scope-note"></p>
+          <div class="overview-grid">
+            <section class="panel accuracy-panel"><div class="panel-heading"><h3>Did the decision improve?</h3><span class="fine">Held-out accuracy</span></div><div id="accuracy-bars"></div><div class="scale"><span>0%</span><span>50%</span><span>100%</span></div><div class="comparison-footer"><strong id="accuracy-delta"></strong><span id="baselines" class="fine"></span></div></section>
+            <section class="panel training-panel"><div class="panel-heading"><h3>The training trace</h3><span id="step-count" class="fine"></span></div><figure><div id="loss-chart"></div><figcaption>Recorded batch loss · straight segments, no smoothing. Training loss is not held-out performance.</figcaption></figure><p id="validation" class="fine"></p></section>
+          </div>
+          <div class="model-toolbar"><div><p class="eyebrow">02 / Inspect a model</p><p class="fine">Metrics, charts and records below follow this selection.</p></div><label for="model-select">Model<select id="model-select"></select></label></div>
+          <p id="model-notice" role="status" class="fine"></p>
+          <div id="metric-cards" class="metric-grid"></div>
+          <div id="task-metrics" class="task-metrics"></div>
+          <div class="chart-grid">
+            <section class="panel"><div class="panel-heading"><h3>Confidence vs. correctness</h3><span class="fine">Calibration</span></div><figure><div id="reliability-chart"></div><figcaption>Mean confidence (x) vs. observed accuracy (y). Dashed line: perfect calibration. Only nonempty bins are plotted.</figcaption></figure><details><summary>Read reliability bins</summary><div id="reliability-table" class="table-scroll" tabindex="0"></div></details></section>
+            <section class="panel"><div class="panel-heading"><h3>Where decisions land</h3><span class="fine">Confusion matrix</span></div><figure><div id="confusion-chart"></div><figcaption>True labels on rows; predicted labels on columns. Cell intensity is relative to the largest count. Label key and full counts below.</figcaption></figure><details><summary>Label key and accessible count table</summary><div id="confusion-table" class="table-scroll" tabindex="0"></div></details></section>
+          </div>
+          <section class="panel inspector" aria-labelledby="inspector-title"><div class="panel-heading"><div><p class="eyebrow">03 / Follow a receipt</p><h3 id="inspector-title">The record inspector</h3><p class="fine">All held-out records; source text intentionally excluded</p></div><label class="checkbox"><input id="errors-only" type="checkbox">Errors only</label></div><div class="record-controls"><button id="record-prev" type="button" aria-label="Previous record">← Previous</button><label for="record-select" class="record-picker">Held-out record<select id="record-select"></select></label><button id="record-next" type="button" aria-label="Next record">Next →</button></div><p id="record-position" class="fine" role="status"></p><div id="record-detail"></div><div id="probability-bars"></div><p class="fine">Recorded class probabilities, not a fresh model response. Calibration changes confidence, not the predicted class.</p></section>
+          <section class="provenance"><p class="eyebrow">04 / Read the fine print</p><h3>What these numbers do—and don't—say.</h3><ul id="notes"></ul><details><summary>Dataset coverage and source receipts</summary><div id="coverage"></div><p class="fine">SHA-256 digests retained with this visualization, keyed by source file:</p><dl id="source-hashes"></dl></details></section>
+        </div>
+      </section>
+    </main>
+    <footer><span class="brand">ifllm<span>-learn</span></span><p>Learn a decision. Measure the trade-off. Keep the evidence.</p><span class="fine">No live inference · no analytics · no external dependencies</span></footer>
+  </div>
+</body>
+</html>

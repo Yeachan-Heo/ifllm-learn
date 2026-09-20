@@ -1,0 +1,154 @@
+{
+  "status": "passed",
+  "modelCases": 15,
+  "checks": [
+    {
+      "dataset": "banking",
+      "model": "base",
+      "records": 400,
+      "errorCount": 49
+    },
+    {
+      "dataset": "banking",
+      "model": "base_calibrated",
+      "records": 400,
+      "errorCount": 49
+    },
+    {
+      "dataset": "banking",
+      "model": "trained",
+      "records": 400,
+      "errorCount": 30
+    },
+    {
+      "dataset": "banking",
+      "model": "trained_calibrated",
+      "records": 400,
+      "errorCount": 30
+    },
+    {
+      "dataset": "clinc",
+      "model": "base",
+      "records": 1300,
+      "errorCount": 71
+    },
+    {
+      "dataset": "clinc",
+      "model": "base_calibrated",
+      "records": 1300,
+      "errorCount": 71
+    },
+    {
+      "dataset": "clinc",
+      "model": "trained",
+      "records": 1300,
+      "errorCount": 82
+    },
+    {
+      "dataset": "clinc",
+      "model": "trained_calibrated",
+      "records": 1300,
+      "errorCount": 82
+    },
+    {
+      "dataset": "contractnli",
+      "model": "base",
+      "records": 170,
+      "errorCount": 48
+    },
+    {
+      "dataset": "contractnli",
+      "model": "base_calibrated",
+      "records": 170,
+      "errorCount": 48
+    },
+    {
+      "dataset": "contractnli",
+      "model": "trained",
+      "records": 170,
+      "errorCount": 47
+    },
+    {
+      "dataset": "contractnli",
+      "model": "trained_calibrated",
+      "records": 170,
+      "errorCount": 47
+    },
+    {
+      "dataset": "bitcoin",
+      "model": "base",
+      "records": 32,
+      "errorCount": 14
+    },
+    {
+      "dataset": "bitcoin",
+      "model": "trained",
+      "records": 32,
+      "errorCount": 14
+    },
+    {
+      "dataset": "bitcoin",
+      "model": "trained_calibrated",
+      "records": 32,
+      "errorCount": 14
+    }
+  ],
+  "keyboardNavigation": true,
+  "unsupportedModelHandled": true,
+  "externalRequests": [],
+  "runtimeErrors": [],
+  "mobileLayouts": [
+    {
+      "dataset": "banking",
+      "width": 390,
+      "scrollWidth": 390,
+      "reportAccessible": true
+    },
+    {
+      "dataset": "clinc",
+      "width": 390,
+      "scrollWidth": 390,
+      "reportAccessible": true
+    },
+    {
+      "dataset": "contractnli",
+      "width": 390,
+      "scrollWidth": 390,
+      "reportAccessible": true
+    },
+    {
+      "dataset": "bitcoin",
+      "width": 390,
+      "scrollWidth": 390,
+      "reportAccessible": true
+    }
+  ],
+  "mobileScreenshot": "docs/demo-mobile.png",
+  "failureCases": [
+    {
+      "case": "missing-data",
+      "passed": true
+    },
+    {
+      "case": "malformed-data",
+      "passed": true
+    },
+    {
+      "case": "zero-errors-synthetic-browser-fixture-only",
+      "passed": true
+    }
+  ],
+  "desktopScreenshot": "docs/demo-dashboard.png",
+  "recordedAssetsUnchanged": true,
+  "format": "ifllm-learn.browser-verification.v1",
+  "surface": "Actual isolated Chromium browser served from loopback; no model inference performed",
+  "source_sha256": {
+    "demo/index.html": "403c18d647b9137d2024e77b3f1e3321941d73d885a2acc3c076bfe0c0cc269c",
+    "demo/app.js": "827f2b0999638490e97bd99ee9242958937c311a4eec41fc4c06a928f0c13227",
+    "demo/styles.css": "2ab5d867aa96244bb5bcbeb4397edbb3427e5b58c19e82628f64f1472e471a88",
+    "demo/data.json": "69f470685a095b2e1473413ed8f0b2188820a9e0b4a25f380619b8c28c91318e",
+    "demo/favicon.svg": "6a1092da8db42a9d5102b214b0d2e1e6bc8364643383dcdba69bac0da0ff6333",
+    "docs/demo-dashboard.png": "654d88f8d5b088e81dc4b239976712ec35613c8c2179f333ccc57325c144af3c",
+    "docs/demo-mobile.png": "690a614a4f115c3fbcf841151c12e255f9572188e8fdcc3a867f5951c893c4c1"
+  }
+}

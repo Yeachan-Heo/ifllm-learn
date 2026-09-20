@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690" role="img" aria-labelledby="title desc">
+<title id="title">ifllm-learn: Train the if. Keep the receipts.</title>
+<desc id="desc">Measured frozen versus LoRA accuracy on four explicitly scoped demonstrations. Banking improves; CLINC declines; ContractNLI gains one correct decision; Bitcoin is unchanged.</desc>
+<rect width="1200" height="690" rx="24" fill="#111713"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="56" y="60" fill="#c4f47b" font-size="18" letter-spacing="3">IFLLM-LEARN / THE DECISION LAB</text>
+<text x="56" y="137" fill="#f2f6ee" font-size="58" font-weight="700">Train the if.</text>
+<text x="56" y="199" fill="#f2f6ee" font-size="58" font-weight="700">Keep the receipts.</text>
+<text x="58" y="244" fill="#a7b5a8" font-size="20">Real labels. Local LoRA. Measured results—not four cherry-picked wins.</text>
+<rect x="820" y="110" width="14" height="14" rx="3" fill="#7e9892"/><text x="843" y="123" fill="#c4cdc2" font-size="17">Frozen</text>
+<rect x="940" y="110" width="14" height="14" rx="3" fill="#c4f47b"/><text x="963" y="123" fill="#c4cdc2" font-size="17">LoRA</text>
+<text x="56" y="318" fill="#f2f6ee" font-size="23" font-weight="700">Banking</text>
+<text x="56" y="346" fill="#a7b5a8" font-size="14">10 intents / 400 messages</text>
+<rect x="56" y="375" width="226" height="21" rx="5" fill="#26332a"/>
+<rect x="56" y="375" width="198.315" height="21" rx="5" fill="#7e9892"/>
+<text x="56" y="413" fill="#dfe7db" font-size="15">87.75% accuracy</text>
+<rect x="56" y="418" width="226" height="21" rx="5" fill="#26332a"/>
+<rect x="56" y="418" width="209.050" height="21" rx="5" fill="#c4f47b"/>
+<text x="56" y="456" fill="#dfe7db" font-size="15">92.50% accuracy</text>
+<text x="56" y="516" fill="#c4f47b" font-size="29" font-weight="700">+4.75 pp</text>
+<text x="338" y="318" fill="#f2f6ee" font-size="23" font-weight="700">Out of scope</text>
+<text x="338" y="346" fill="#a7b5a8" font-size="14">10 intents + OOS / 1,300</text>
+<rect x="338" y="375" width="226" height="21" rx="5" fill="#26332a"/>
+<rect x="338" y="375" width="213.657" height="21" rx="5" fill="#7e9892"/>
+<text x="338" y="413" fill="#dfe7db" font-size="15">94.54% accuracy</text>
+<rect x="338" y="418" width="226" height="21" rx="5" fill="#26332a"/>
+<rect x="338" y="418" width="211.745" height="21" rx="5" fill="#c4f47b"/>
+<text x="338" y="456" fill="#dfe7db" font-size="15">93.69% accuracy</text>
+<text x="338" y="516" fill="#eeb882" font-size="29" font-weight="700">-0.85 pp</text>
+<text x="620" y="318" fill="#f2f6ee" font-size="23" font-weight="700">Contracts</text>
+<text x="620" y="346" fill="#a7b5a8" font-size="14">10 documents / 170 decisions</text>
+<rect x="620" y="375" width="226" height="21" rx="5" fill="#26332a"/>
+<rect x="620" y="375" width="162.188" height="21" rx="5" fill="#7e9892"/>
+<text x="620" y="413" fill="#dfe7db" font-size="15">71.76% accuracy</text>
+<rect x="620" y="418" width="226" height="21" rx="5" fill="#26332a"/>
+<rect x="620" y="418" width="163.518" height="21" rx="5" fill="#c4f47b"/>
+<text x="620" y="456" fill="#dfe7db" font-size="15">72.35% accuracy</text>
+<text x="620" y="516" fill="#c4f47b" font-size="29" font-weight="700">+0.59 pp</text>
+<text x="902" y="318" fill="#f2f6ee" font-size="23" font-weight="700">Bitcoin</text>
+<text x="902" y="346" fill="#a7b5a8" font-size="14">32 exploratory observations</text>
+<rect x="902" y="375" width="226" height="21" rx="5" fill="#26332a"/>
+<rect x="902" y="375" width="127.125" height="21" rx="5" fill="#7e9892"/>
+<text x="902" y="413" fill="#dfe7db" font-size="15">56.25% accuracy</text>
+<rect x="902" y="418" width="226" height="21" rx="5" fill="#26332a"/>
+<rect x="902" y="418" width="127.125" height="21" rx="5" fill="#c4f47b"/>
+<text x="902" y="456" fill="#dfe7db" font-size="15">56.25% accuracy</text>
+<text x="902" y="516" fill="#a7b5a8" font-size="29" font-weight="700">+0.00 pp</text>
+<path d="M56 550H1144" stroke="#334036"/>
+<text x="56" y="591" fill="#c4cdc2" font-size="17">All numbers are recorded runs. ContractNLI: one more correct decision, not a robust gain.</text>
+<text x="56" y="621" fill="#a7b5a8" font-size="17">Bitcoin did not beat its accuracy baseline. Open the interactive lab to inspect errors and calibration.</text>
+<text x="56" y="656" fill="#c4f47b" font-size="14" letter-spacing="1">NO LIVE BROWSER INFERENCE • NO TRADING • NO HIDDEN REGRESSIONS</text>
+</g></svg>
