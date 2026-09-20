@@ -1,0 +1,18 @@
+{
+  "format": "ifllm-learn.preparation-notes.v1",
+  "contractnli": {
+    "finding": "The official source contains two normalized-identical document components with conflicting labels.",
+    "components": [
+      {"document_ids": [537, 538], "source_splits": ["test", "train"], "conflicting_hypothesis": "nda-1"},
+      {"document_ids": [515, 548], "source_splits": ["train", "train"], "conflicting_hypothesis": "nda-12"}
+    ],
+    "decision": "Exclude all four documents (68 hypothesis rows) before token filtering and before any model scoring. Do not select a preferred annotation.",
+    "evidence": "The generated ContractNLI manifest contains component IDs, row IDs, source partitions, label-map digests and exclusion reasons."
+  },
+  "bitcoin": {
+    "historical_run": "btc-toy-002",
+    "prior_experiment": "btc-toy-001 used 1e-4 and validation loss deteriorated from 1.089743 to 17.554040; original local artifacts preserved.",
+    "published_run": "btc-toy-002 used 1e-5 after validation diagnostics; the same 32 test rows were reused. This is exploratory evidence, not a fresh confirmatory evaluation.",
+    "claim": "No directional-accuracy improvement or trading profitability established."
+  }
+}

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ifllm-learn"
+version = "0.1.0"
+description = "Supervised semantic decision learning, evaluation, and calibration on MLX"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["numpy==2.2.6", "scipy==1.15.3", "scikit-learn==1.6.1"]
+
+[project.optional-dependencies]
+mlx = ["semif-phase1[mlx] @ git+https://github.com/TheoLeeCJ/SemIf.git@ca3ba65f142967030ecb453346e94d6f476a69df"]
+test = ["pytest==8.4.2"]
+
+[project.scripts]
+ifllm-learn = "ifllm_learn.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

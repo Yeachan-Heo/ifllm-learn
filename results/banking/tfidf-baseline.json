@@ -1,0 +1,236 @@
+{
+  "count": 400,
+  "accuracy": 0.8775,
+  "macro_f1": 0.8727603478045927,
+  "log_loss": 0.9510216871079322,
+  "brier": 0.3995068129088547,
+  "brier_definition": "mean sum of squared class probability errors",
+  "confusion_matrix": [
+    [
+      31,
+      0,
+      8,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      12,
+      18,
+      4,
+      0,
+      2,
+      0,
+      3,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      39,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      37,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      39,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      39,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      37,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      37,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      2,
+      0,
+      1,
+      0,
+      36,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      38
+    ]
+  ],
+  "ece_10_bins": 0.4150618877683056,
+  "reliability_bins": [
+    {
+      "lower": 0.0,
+      "upper": 0.1,
+      "count": 0,
+      "accuracy": null,
+      "mean_confidence": null
+    },
+    {
+      "lower": 0.1,
+      "upper": 0.2,
+      "count": 36,
+      "accuracy": 0.5,
+      "mean_confidence": 0.175383007438216
+    },
+    {
+      "lower": 0.2,
+      "upper": 0.3,
+      "count": 66,
+      "accuracy": 0.6818181818181818,
+      "mean_confidence": 0.24505144977810558
+    },
+    {
+      "lower": 0.3,
+      "upper": 0.4,
+      "count": 73,
+      "accuracy": 0.8904109589041096,
+      "mean_confidence": 0.35104574428729524
+    },
+    {
+      "lower": 0.4,
+      "upper": 0.5,
+      "count": 65,
+      "accuracy": 0.9692307692307692,
+      "mean_confidence": 0.45381250017941044
+    },
+    {
+      "lower": 0.5,
+      "upper": 0.6,
+      "count": 55,
+      "accuracy": 1.0,
+      "mean_confidence": 0.5519716174388328
+    },
+    {
+      "lower": 0.6,
+      "upper": 0.7,
+      "count": 46,
+      "accuracy": 1.0,
+      "mean_confidence": 0.6452031722083456
+    },
+    {
+      "lower": 0.7,
+      "upper": 0.8,
+      "count": 34,
+      "accuracy": 1.0,
+      "mean_confidence": 0.75508631447119
+    },
+    {
+      "lower": 0.8,
+      "upper": 0.9,
+      "count": 18,
+      "accuracy": 1.0,
+      "mean_confidence": 0.8475875888430723
+    },
+    {
+      "lower": 0.9,
+      "upper": 1.0,
+      "count": 7,
+      "accuracy": 1.0,
+      "mean_confidence": 0.9138018461424734
+    }
+  ],
+  "model_description": "scikit-learn word TF-IDF (1,2) with logistic regression; trained on question and prompt only",
+  "hyperparameters": {
+    "tfidf": {
+      "analyzer": "word",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "sublinear_tf": true
+    },
+    "logistic_regression": {
+      "C": 1,
+      "max_iter": 1000,
+      "random_state": 17
+    }
+  },
+  "vocabulary_size": 5660,
+  "fit_seconds": 0.07408141699852422,
+  "predict_seconds": 0.005327749997377396,
+  "train_count": 1029,
+  "test_count": 400,
+  "option_ids": [
+    "card_not_working",
+    "contactless_not_working",
+    "declined_card_payment",
+    "pending_card_payment",
+    "card_payment_not_recognised",
+    "transaction_charged_twice",
+    "card_payment_fee_charged",
+    "card_payment_wrong_exchange_rate",
+    "reverted_card_payment?",
+    "Refund_not_showing_up"
+  ]
+}

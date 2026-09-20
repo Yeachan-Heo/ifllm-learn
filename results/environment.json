@@ -1,0 +1,17 @@
+{
+  "hardware": "Apple M5 Max",
+  "unified_memory_bytes": 137438953472,
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "python": "3.12.13",
+  "packages": {
+    "ifllm-learn": "0.1.0",
+    "semif-phase1": "0.1.0",
+    "mlx": "0.32.2",
+    "mlx-lm": "0.32.0",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.6.1",
+    "transformers": "5.17.0"
+  },
+  "execution_note": "Text model experiments were run sequentially; an idle base SemIf service remained resident. These runs are not isolated hardware latency benchmarks."
+}

@@ -1,0 +1,71 @@
+{
+  "purpose": "Original README demonstration query, not a benchmark example or accuracy estimate",
+  "input": "examples/banking-query.jsonl",
+  "prediction": {
+    "adapter_sha256": "f04b64d0a11fe40af811c8105c0e4136d77b527a9bc1cdbcbe4cadbad324977f",
+    "answer": "transaction_charged_twice",
+    "contract_sha256": "060a9f492ab2d31472c18963bfedf81712c6c79f063a3fd23b7fce67a6e02ae9",
+    "id": "owned-demo-double-charge",
+    "input_tokens": 273,
+    "logits": [
+      14.5625,
+      14.0,
+      16.125,
+      14.375,
+      15.375,
+      27.0,
+      15.875,
+      14.5625,
+      14.3125,
+      12.1875
+    ],
+    "metadata": {},
+    "model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+    "option_ids": [
+      "card_not_working",
+      "contactless_not_working",
+      "declined_card_payment",
+      "pending_card_payment",
+      "card_payment_not_recognised",
+      "transaction_charged_twice",
+      "card_payment_fee_charged",
+      "card_payment_wrong_exchange_rate",
+      "reverted_card_payment?",
+      "Refund_not_showing_up"
+    ],
+    "precision": {
+      "dtype": [
+        "mlx.core.bfloat16",
+        "mlx.core.float32"
+      ],
+      "quantization": null
+    },
+    "probabilities": [
+      0.00018401342799731672,
+      0.00012472849743040286,
+      0.000541965015233654,
+      0.0001616422576007958,
+      0.00032269543312360676,
+      0.9978345634271033,
+      0.00045594428354328104,
+      0.00018401342799731672,
+      0.00015480680160583532,
+      3.562742836450026e-05
+    ],
+    "prompt_sha256": "c2e392cae514d40ff5136a38f62765811ab82a6571d0a83c05d0aaf63c9ce013",
+    "raw_probabilities": [
+      3.966765446705066e-06,
+      2.260194821268634e-06,
+      1.89243795416784e-05,
+      3.2885640603103827e-06,
+      8.93924392686521e-06,
+      0.9999404574784523,
+      1.4738321606199612e-05,
+      3.966765446705066e-06,
+      3.0893200361544967e-06,
+      3.689666618437811e-07
+    ],
+    "temperature": 1.4465011410090562,
+    "total_seconds": 0.10315608297241852
+  }
+}

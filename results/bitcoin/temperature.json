@@ -1,0 +1,63 @@
+{
+  "format": "ifllm-learn.temperature.v1",
+  "model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "adapter_sha256": "c829be9b2f51a3e937fe3c2a9ea0de76cda767b1a49d36b18340cfa3161d70cf",
+  "contract_sha256": "a0ab930058e06210ebc270515dd69957b2a6391746848f36bcda2fa7d3f6e72c",
+  "option_ids": [
+    "up",
+    "flat",
+    "down"
+  ],
+  "precision": {
+    "dtype": [
+      "mlx.core.bfloat16",
+      "mlx.core.float32"
+    ],
+    "quantization": null
+  },
+  "temperature": 3.5522231471386614,
+  "n": 32,
+  "nll_before": 1.365983811669931,
+  "nll_after": 1.0351076597907218,
+  "optimizer": "bounded scipy minimize_scalar on log(T)",
+  "log_temperature_bounds": [
+    -5,
+    5
+  ],
+  "at_bound": false,
+  "fit_ids": [
+    "BTCUSDT-2025-04-01",
+    "BTCUSDT-2025-04-03",
+    "BTCUSDT-2025-04-06",
+    "BTCUSDT-2025-04-09",
+    "BTCUSDT-2025-04-12",
+    "BTCUSDT-2025-04-15",
+    "BTCUSDT-2025-04-18",
+    "BTCUSDT-2025-04-21",
+    "BTCUSDT-2025-04-23",
+    "BTCUSDT-2025-04-26",
+    "BTCUSDT-2025-04-29",
+    "BTCUSDT-2025-05-02",
+    "BTCUSDT-2025-05-05",
+    "BTCUSDT-2025-05-08",
+    "BTCUSDT-2025-05-11",
+    "BTCUSDT-2025-05-14",
+    "BTCUSDT-2025-05-16",
+    "BTCUSDT-2025-05-19",
+    "BTCUSDT-2025-05-22",
+    "BTCUSDT-2025-05-25",
+    "BTCUSDT-2025-05-28",
+    "BTCUSDT-2025-05-31",
+    "BTCUSDT-2025-06-03",
+    "BTCUSDT-2025-06-06",
+    "BTCUSDT-2025-06-08",
+    "BTCUSDT-2025-06-11",
+    "BTCUSDT-2025-06-14",
+    "BTCUSDT-2025-06-17",
+    "BTCUSDT-2025-06-20",
+    "BTCUSDT-2025-06-23",
+    "BTCUSDT-2025-06-26",
+    "BTCUSDT-2025-06-29"
+  ],
+  "limitation": "A common positive temperature preserves argmax; calibration may not generalize under distribution shift."
+}

@@ -1,0 +1,356 @@
+{
+  "format": "ifllm-learn.lora.v1",
+  "objective": "cross entropy over declared native option-token logits",
+  "model_source": "Qwen/Qwen3.5-4B",
+  "model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "semif_revision": "ca3ba65f142967030ecb453346e94d6f476a69df",
+  "base_artifact_sha256": {
+    "chat_template.jinja": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+    "config.json": "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670",
+    "merges.txt": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d",
+    "model.safetensors-00001-of-00002.safetensors": "26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61",
+    "model.safetensors-00002-of-00002.safetensors": "cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188",
+    "model.safetensors.index.json": "cf3f798ee02ba45f9622aa8892a47369ab667d0afbf154ee7c2212de42e6302d",
+    "preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+    "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "tokenizer_config.json": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8",
+    "video_preprocessor_config.json": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+    "vocab.json": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+  },
+  "runtime": {
+    "mlx_version": "0.32.2",
+    "mlx_lm_version": "0.32.0",
+    "mlx_lm_source": {
+      "url": "https://github.com/ml-explore/mlx-lm.git",
+      "vcs_info": {
+        "vcs": "git",
+        "commit_id": "a63e24c389382619eb6d9af656e3b46024be217a",
+        "requested_revision": "a63e24c389382619eb6d9af656e3b46024be217a"
+      }
+    },
+    "transformers_version": "5.17.0"
+  },
+  "bits": null,
+  "seed": 7,
+  "steps": 32,
+  "learning_rate": 1e-05,
+  "num_layers": 2,
+  "rank": 8,
+  "max_tokens": 1024,
+  "trainable_parameters": 995840,
+  "changed_adapter_tensors": [
+    "language_model.model.layers.30.linear_attn.in_proj_qkv.lora_a",
+    "language_model.model.layers.30.linear_attn.in_proj_qkv.lora_b",
+    "language_model.model.layers.30.linear_attn.in_proj_z.lora_a",
+    "language_model.model.layers.30.linear_attn.in_proj_z.lora_b",
+    "language_model.model.layers.30.linear_attn.in_proj_b.lora_a",
+    "language_model.model.layers.30.linear_attn.in_proj_b.lora_b",
+    "language_model.model.layers.30.linear_attn.in_proj_a.lora_a",
+    "language_model.model.layers.30.linear_attn.in_proj_a.lora_b",
+    "language_model.model.layers.30.linear_attn.out_proj.lora_a",
+    "language_model.model.layers.30.linear_attn.out_proj.lora_b",
+    "language_model.model.layers.30.mlp.gate_proj.lora_a",
+    "language_model.model.layers.30.mlp.gate_proj.lora_b",
+    "language_model.model.layers.30.mlp.down_proj.lora_a",
+    "language_model.model.layers.30.mlp.down_proj.lora_b",
+    "language_model.model.layers.30.mlp.up_proj.lora_a",
+    "language_model.model.layers.30.mlp.up_proj.lora_b",
+    "language_model.model.layers.31.self_attn.q_proj.lora_a",
+    "language_model.model.layers.31.self_attn.q_proj.lora_b",
+    "language_model.model.layers.31.self_attn.k_proj.lora_a",
+    "language_model.model.layers.31.self_attn.k_proj.lora_b",
+    "language_model.model.layers.31.self_attn.v_proj.lora_a",
+    "language_model.model.layers.31.self_attn.v_proj.lora_b",
+    "language_model.model.layers.31.self_attn.o_proj.lora_a",
+    "language_model.model.layers.31.self_attn.o_proj.lora_b",
+    "language_model.model.layers.31.mlp.gate_proj.lora_a",
+    "language_model.model.layers.31.mlp.gate_proj.lora_b",
+    "language_model.model.layers.31.mlp.down_proj.lora_a",
+    "language_model.model.layers.31.mlp.down_proj.lora_b",
+    "language_model.model.layers.31.mlp.up_proj.lora_a",
+    "language_model.model.layers.31.mlp.up_proj.lora_b"
+  ],
+  "history": [
+    {
+      "step": 1,
+      "example_id": "BTCUSDT-2023-07-16",
+      "loss": 0.22695088386535645,
+      "gradient_norm": 17.37286949157715
+    },
+    {
+      "step": 2,
+      "example_id": "BTCUSDT-2023-11-18",
+      "loss": 0.39069482684135437,
+      "gradient_norm": 26.56340980529785
+    },
+    {
+      "step": 3,
+      "example_id": "BTCUSDT-2024-09-19",
+      "loss": 0.9310123324394226,
+      "gradient_norm": 58.589534759521484
+    },
+    {
+      "step": 4,
+      "example_id": "BTCUSDT-2023-05-09",
+      "loss": 0.300302118062973,
+      "gradient_norm": 23.31093978881836
+    },
+    {
+      "step": 5,
+      "example_id": "BTCUSDT-2024-02-16",
+      "loss": 0.1535303145647049,
+      "gradient_norm": 14.658125877380371
+    },
+    {
+      "step": 6,
+      "example_id": "BTCUSDT-2024-09-07",
+      "loss": 0.08422526717185974,
+      "gradient_norm": 9.231864929199219
+    },
+    {
+      "step": 7,
+      "example_id": "BTCUSDT-2024-07-24",
+      "loss": 0.03469206392765045,
+      "gradient_norm": 4.862057685852051
+    },
+    {
+      "step": 8,
+      "example_id": "BTCUSDT-2023-06-01",
+      "loss": 7.753606796264648,
+      "gradient_norm": 220.65762329101562
+    },
+    {
+      "step": 9,
+      "example_id": "BTCUSDT-2023-01-08",
+      "loss": 9.250120162963867,
+      "gradient_norm": 261.8016052246094
+    },
+    {
+      "step": 10,
+      "example_id": "BTCUSDT-2024-10-23",
+      "loss": 10.375089645385742,
+      "gradient_norm": 245.62844848632812
+    },
+    {
+      "step": 11,
+      "example_id": "BTCUSDT-2023-03-17",
+      "loss": 5.255463123321533,
+      "gradient_norm": 177.76182556152344
+    },
+    {
+      "step": 12,
+      "example_id": "BTCUSDT-2023-02-22",
+      "loss": 6.628026008605957,
+      "gradient_norm": 167.69549560546875
+    },
+    {
+      "step": 13,
+      "example_id": "BTCUSDT-2024-06-09",
+      "loss": 0.0024123874027282,
+      "gradient_norm": 0.3422028124332428
+    },
+    {
+      "step": 14,
+      "example_id": "BTCUSDT-2024-12-07",
+      "loss": 0.02406890131533146,
+      "gradient_norm": 2.906334400177002
+    },
+    {
+      "step": 15,
+      "example_id": "BTCUSDT-2024-01-13",
+      "loss": 0.02775975875556469,
+      "gradient_norm": 3.2675256729125977
+    },
+    {
+      "step": 16,
+      "example_id": "BTCUSDT-2023-09-22",
+      "loss": 0.02775975875556469,
+      "gradient_norm": 3.2452847957611084
+    },
+    {
+      "step": 17,
+      "example_id": "BTCUSDT-2023-08-19",
+      "loss": 0.01770934835076332,
+      "gradient_norm": 2.263631582260132
+    },
+    {
+      "step": 18,
+      "example_id": "BTCUSDT-2023-10-15",
+      "loss": 7.877854824066162,
+      "gradient_norm": 155.34681701660156
+    },
+    {
+      "step": 19,
+      "example_id": "BTCUSDT-2023-06-23",
+      "loss": 6.503201961517334,
+      "gradient_norm": 151.62051391601562
+    },
+    {
+      "step": 20,
+      "example_id": "BTCUSDT-2024-05-06",
+      "loss": 7.252410888671875,
+      "gradient_norm": 144.2242889404297
+    },
+    {
+      "step": 21,
+      "example_id": "BTCUSDT-2024-04-02",
+      "loss": 5.382411956787109,
+      "gradient_norm": 140.83297729492188
+    },
+    {
+      "step": 22,
+      "example_id": "BTCUSDT-2024-08-04",
+      "loss": 5.258024215698242,
+      "gradient_norm": 133.35000610351562
+    },
+    {
+      "step": 23,
+      "example_id": "BTCUSDT-2023-11-06",
+      "loss": 0.007783323526382446,
+      "gradient_norm": 0.8916882872581482
+    },
+    {
+      "step": 24,
+      "example_id": "BTCUSDT-2023-08-30",
+      "loss": 5.192541122436523,
+      "gradient_norm": 107.34794616699219
+    },
+    {
+      "step": 25,
+      "example_id": "BTCUSDT-2023-11-29",
+      "loss": 0.07113999873399734,
+      "gradient_norm": 7.014145374298096
+    },
+    {
+      "step": 26,
+      "example_id": "BTCUSDT-2024-12-30",
+      "loss": 3.781662940979004,
+      "gradient_norm": 105.38976287841797
+    },
+    {
+      "step": 27,
+      "example_id": "BTCUSDT-2024-08-16",
+      "loss": 4.429985523223877,
+      "gradient_norm": 101.47705078125
+    },
+    {
+      "step": 28,
+      "example_id": "BTCUSDT-2024-02-28",
+      "loss": 2.363028049468994,
+      "gradient_norm": 83.64888763427734
+    },
+    {
+      "step": 29,
+      "example_id": "BTCUSDT-2024-10-11",
+      "loss": 4.0555195808410645,
+      "gradient_norm": 90.53292846679688
+    },
+    {
+      "step": 30,
+      "example_id": "BTCUSDT-2023-01-19",
+      "loss": 2.768688917160034,
+      "gradient_norm": 75.00277709960938
+    },
+    {
+      "step": 31,
+      "example_id": "BTCUSDT-2024-03-10",
+      "loss": 0.08383147418498993,
+      "gradient_norm": 5.697756290435791
+    },
+    {
+      "step": 32,
+      "example_id": "BTCUSDT-2023-04-28",
+      "loss": 0.34487706422805786,
+      "gradient_norm": 19.493017196655273
+    }
+  ],
+  "validation_loss_before": 1.0897433335582416,
+  "validation_loss_after": 1.522867487122615,
+  "validation_improved": false,
+  "training_seconds": 27.860111250018235,
+  "train_ids": [
+    "BTCUSDT-2023-01-08",
+    "BTCUSDT-2023-01-19",
+    "BTCUSDT-2023-01-30",
+    "BTCUSDT-2023-02-11",
+    "BTCUSDT-2023-02-22",
+    "BTCUSDT-2023-03-05",
+    "BTCUSDT-2023-03-17",
+    "BTCUSDT-2023-04-05",
+    "BTCUSDT-2023-04-16",
+    "BTCUSDT-2023-04-28",
+    "BTCUSDT-2023-05-09",
+    "BTCUSDT-2023-05-20",
+    "BTCUSDT-2023-06-01",
+    "BTCUSDT-2023-06-12",
+    "BTCUSDT-2023-06-23",
+    "BTCUSDT-2023-07-05",
+    "BTCUSDT-2023-07-16",
+    "BTCUSDT-2023-07-27",
+    "BTCUSDT-2023-08-08",
+    "BTCUSDT-2023-08-19",
+    "BTCUSDT-2023-08-30",
+    "BTCUSDT-2023-09-11",
+    "BTCUSDT-2023-09-22",
+    "BTCUSDT-2023-10-03",
+    "BTCUSDT-2023-10-15",
+    "BTCUSDT-2023-10-26",
+    "BTCUSDT-2023-11-06",
+    "BTCUSDT-2023-11-18",
+    "BTCUSDT-2023-11-29",
+    "BTCUSDT-2023-12-10",
+    "BTCUSDT-2023-12-22",
+    "BTCUSDT-2024-01-02",
+    "BTCUSDT-2024-01-13",
+    "BTCUSDT-2024-01-25",
+    "BTCUSDT-2024-02-05",
+    "BTCUSDT-2024-02-16",
+    "BTCUSDT-2024-02-28",
+    "BTCUSDT-2024-03-10",
+    "BTCUSDT-2024-03-21",
+    "BTCUSDT-2024-04-02",
+    "BTCUSDT-2024-04-13",
+    "BTCUSDT-2024-04-24",
+    "BTCUSDT-2024-05-06",
+    "BTCUSDT-2024-05-17",
+    "BTCUSDT-2024-05-28",
+    "BTCUSDT-2024-06-09",
+    "BTCUSDT-2024-06-20",
+    "BTCUSDT-2024-07-01",
+    "BTCUSDT-2024-07-13",
+    "BTCUSDT-2024-07-24",
+    "BTCUSDT-2024-08-04",
+    "BTCUSDT-2024-08-16",
+    "BTCUSDT-2024-08-27",
+    "BTCUSDT-2024-09-07",
+    "BTCUSDT-2024-09-19",
+    "BTCUSDT-2024-09-30",
+    "BTCUSDT-2024-10-11",
+    "BTCUSDT-2024-10-23",
+    "BTCUSDT-2024-11-03",
+    "BTCUSDT-2024-11-14",
+    "BTCUSDT-2024-11-26",
+    "BTCUSDT-2024-12-07",
+    "BTCUSDT-2024-12-18",
+    "BTCUSDT-2024-12-30"
+  ],
+  "valid_ids": [
+    "BTCUSDT-2025-01-01",
+    "BTCUSDT-2025-01-09",
+    "BTCUSDT-2025-01-17",
+    "BTCUSDT-2025-01-25",
+    "BTCUSDT-2025-02-02",
+    "BTCUSDT-2025-02-10",
+    "BTCUSDT-2025-02-18",
+    "BTCUSDT-2025-02-26",
+    "BTCUSDT-2025-03-06",
+    "BTCUSDT-2025-03-14",
+    "BTCUSDT-2025-03-22",
+    "BTCUSDT-2025-03-30"
+  ],
+  "train_sha256": "5ae918ea2142f7cc0c97c94bc12353462d70778415cc78fec61e1e98bba6fcca",
+  "valid_sha256": "649aef5777bc52cee438c732957ac6b5650f0823f80960849c99b6638522fb2e",
+  "contract_sha256": "a0ab930058e06210ebc270515dd69957b2a6391746848f36bcda2fa7d3f6e72c",
+  "adapter_sha256": "c829be9b2f51a3e937fe3c2a9ea0de76cda767b1a49d36b18340cfa3161d70cf",
+  "adapter_config_sha256": "07e0139f3dbaf12b8dc9b3665583fb89eff239c4b964f77d96c10f3a648246ed"
+}

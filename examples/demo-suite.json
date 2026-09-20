@@ -1,0 +1,17 @@
+{
+  "format": "ifllm-learn.demo-suite.v1",
+  "seed": 17,
+  "selection_policy": "Freeze datasets, class definitions, label-blind subset indices and hyperparameters before any new test scoring. One final adapter per task; no test-driven search.",
+  "shared": {"learning_rate": 0.00001, "num_layers": 2, "rank": 8, "max_tokens": 2048, "bits": null},
+  "datasets": {
+    "banking": {"steps": 128, "batch_size": 4, "train_limit": null, "valid_limit": null, "calibration_limit": null, "test_limit": null},
+    "clinc": {"steps": 128, "batch_size": 4, "train_limit": null, "valid_limit": null, "calibration_limit": null, "test_limit": null},
+    "contractnli": {"steps": 64, "batch_size": 2, "train_limit": 340, "valid_limit": 68, "calibration_limit": 136, "test_limit": 170}
+  },
+  "limitations": [
+    "BANKING77-10 and CLINC-10+OOS are explicitly reduced label universes, not original full benchmarks.",
+    "ContractNLI retains only whole documents fitting 2048 tokens for every question and evaluates 10 selected documents x 17 hypotheses when available. It does not evaluate evidence extraction.",
+    "The Bitcoin hook preserves earlier exploratory negative results; it is not promoted as a trading strategy.",
+    "Single-seed, fixed-budget demos are not evidence of state-of-the-art performance or robustness."
+  ]
+}

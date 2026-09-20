@@ -1,0 +1,22 @@
+{
+  "format": "ifllm-learn.reload.v2",
+  "rows": 32,
+  "max_logit_difference": 0.0,
+  "answers_identical": true,
+  "calibrated_probabilities_match": true,
+  "adapter_sha256": "c829be9b2f51a3e937fe3c2a9ea0de76cda767b1a49d36b18340cfa3161d70cf",
+  "run_sha256": "f23deede51611fe094f045a9ae94f349dbfc0abacf47a95faa31660628b52829",
+  "verified_sha256": {
+    "run.json": "f23deede51611fe094f045a9ae94f349dbfc0abacf47a95faa31660628b52829",
+    "test-input.jsonl": "e4f3ba182fc727fbd6d6112fa04276dda79e209a03ad9413909466c82a676c56",
+    "trained-test.jsonl": "60c7353d5b85493108b034534153fdb1b8260c4e1ed1054ad41d64885fc08b1c",
+    "calibrated-test.jsonl": "85a8efdaaf382ce8b3f00ce230c8db508454846e85350ea27491936680da9e9c",
+    "temperature.json": "80ff6a0a281db3d70bbbad92eff15c871b19779ea6a0011c6f1bea68eb355ed6",
+    "adapter/adapters.safetensors": "c829be9b2f51a3e937fe3c2a9ea0de76cda767b1a49d36b18340cfa3161d70cf",
+    "adapter/adapter_config.json": "07e0139f3dbaf12b8dc9b3665583fb89eff239c4b964f77d96c10f3a648246ed",
+    "adapter/training.json": "70ef91338d85e4bc2d09cea91d3c40383e888dbda68cefa2aa176a72765cacc4",
+    "report.json": "b25263903d9a0815987305517e15c99672456d1653215f9a8456d24c08e19bc4",
+    "base-test.jsonl": "1bb29b7a882022b13cf7b99d4de352fca11486fc9e416f6ab7ae7534b93b9ed5",
+    "trained-calibration.jsonl": "b5705f7c780d19076f51b644874a8561095239e1a955763892bc2394e872f887"
+  }
+}

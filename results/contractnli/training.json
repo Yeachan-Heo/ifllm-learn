@@ -1,0 +1,1074 @@
+{
+  "format": "ifllm-learn.lora.v1",
+  "objective": "cross entropy over declared native option-token logits",
+  "model_source": "Qwen/Qwen3.5-4B",
+  "model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "semif_revision": "ca3ba65f142967030ecb453346e94d6f476a69df",
+  "base_artifact_sha256": {
+    "chat_template.jinja": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+    "config.json": "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670",
+    "merges.txt": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d",
+    "model.safetensors-00001-of-00002.safetensors": "26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61",
+    "model.safetensors-00002-of-00002.safetensors": "cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188",
+    "model.safetensors.index.json": "cf3f798ee02ba45f9622aa8892a47369ab667d0afbf154ee7c2212de42e6302d",
+    "preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+    "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "tokenizer_config.json": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8",
+    "video_preprocessor_config.json": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+    "vocab.json": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+  },
+  "runtime": {
+    "mlx_version": "0.32.2",
+    "mlx_lm_version": "0.32.0",
+    "mlx_lm_source": {
+      "url": "https://github.com/ml-explore/mlx-lm.git",
+      "vcs_info": {
+        "vcs": "git",
+        "commit_id": "a63e24c389382619eb6d9af656e3b46024be217a",
+        "requested_revision": "a63e24c389382619eb6d9af656e3b46024be217a"
+      }
+    },
+    "transformers_version": "5.17.0"
+  },
+  "bits": null,
+  "seed": 17,
+  "steps": 64,
+  "learning_rate": 1e-05,
+  "num_layers": 2,
+  "rank": 8,
+  "max_tokens": 2048,
+  "batch_size": 2,
+  "examples_seen": 128,
+  "trainable_parameters": 995840,
+  "changed_adapter_tensors": [
+    "language_model.model.layers.30.linear_attn.in_proj_qkv.lora_a",
+    "language_model.model.layers.30.linear_attn.in_proj_qkv.lora_b",
+    "language_model.model.layers.30.linear_attn.in_proj_z.lora_a",
+    "language_model.model.layers.30.linear_attn.in_proj_z.lora_b",
+    "language_model.model.layers.30.linear_attn.in_proj_b.lora_a",
+    "language_model.model.layers.30.linear_attn.in_proj_b.lora_b",
+    "language_model.model.layers.30.linear_attn.in_proj_a.lora_a",
+    "language_model.model.layers.30.linear_attn.in_proj_a.lora_b",
+    "language_model.model.layers.30.linear_attn.out_proj.lora_a",
+    "language_model.model.layers.30.linear_attn.out_proj.lora_b",
+    "language_model.model.layers.30.mlp.gate_proj.lora_a",
+    "language_model.model.layers.30.mlp.gate_proj.lora_b",
+    "language_model.model.layers.30.mlp.down_proj.lora_a",
+    "language_model.model.layers.30.mlp.down_proj.lora_b",
+    "language_model.model.layers.30.mlp.up_proj.lora_a",
+    "language_model.model.layers.30.mlp.up_proj.lora_b",
+    "language_model.model.layers.31.self_attn.q_proj.lora_a",
+    "language_model.model.layers.31.self_attn.q_proj.lora_b",
+    "language_model.model.layers.31.self_attn.k_proj.lora_a",
+    "language_model.model.layers.31.self_attn.k_proj.lora_b",
+    "language_model.model.layers.31.self_attn.v_proj.lora_a",
+    "language_model.model.layers.31.self_attn.v_proj.lora_b",
+    "language_model.model.layers.31.self_attn.o_proj.lora_a",
+    "language_model.model.layers.31.self_attn.o_proj.lora_b",
+    "language_model.model.layers.31.mlp.gate_proj.lora_a",
+    "language_model.model.layers.31.mlp.gate_proj.lora_b",
+    "language_model.model.layers.31.mlp.down_proj.lora_a",
+    "language_model.model.layers.31.mlp.down_proj.lora_b",
+    "language_model.model.layers.31.mlp.up_proj.lora_a",
+    "language_model.model.layers.31.mlp.up_proj.lora_b"
+  ],
+  "history": [
+    {
+      "step": 1,
+      "example_ids": [
+        "contractnli:211:nda-3",
+        "contractnli:470:nda-12"
+      ],
+      "loss": 0.4997031018137932,
+      "gradient_norm": 48.687744140625
+    },
+    {
+      "step": 2,
+      "example_ids": [
+        "contractnli:269:nda-8",
+        "contractnli:120:nda-16"
+      ],
+      "loss": 2.5080313172657043,
+      "gradient_norm": 67.22618865966797
+    },
+    {
+      "step": 3,
+      "example_ids": [
+        "contractnli:269:nda-20",
+        "contractnli:238:nda-1"
+      ],
+      "loss": 1.0022336822003126,
+      "gradient_norm": 52.39609146118164
+    },
+    {
+      "step": 4,
+      "example_ids": [
+        "contractnli:449:nda-11",
+        "contractnli:338:nda-10"
+      ],
+      "loss": 0.0183411167236045,
+      "gradient_norm": 2.63741397857666
+    },
+    {
+      "step": 5,
+      "example_ids": [
+        "contractnli:449:nda-5",
+        "contractnli:492:nda-12"
+      ],
+      "loss": 0.11599435470998287,
+      "gradient_norm": 15.502805709838867
+    },
+    {
+      "step": 6,
+      "example_ids": [
+        "contractnli:338:nda-5",
+        "contractnli:238:nda-3"
+      ],
+      "loss": 0.1387978084385395,
+      "gradient_norm": 20.916545867919922
+    },
+    {
+      "step": 7,
+      "example_ids": [
+        "contractnli:282:nda-4",
+        "contractnli:100:nda-20"
+      ],
+      "loss": 0.37528255209326744,
+      "gradient_norm": 37.01559829711914
+    },
+    {
+      "step": 8,
+      "example_ids": [
+        "contractnli:96:nda-10",
+        "contractnli:120:nda-19"
+      ],
+      "loss": 3.0132171739824116,
+      "gradient_norm": 91.00194549560547
+    },
+    {
+      "step": 9,
+      "example_ids": [
+        "contractnli:269:nda-17",
+        "contractnli:188:nda-16"
+      ],
+      "loss": 0.12400951981544495,
+      "gradient_norm": 7.186982154846191
+    },
+    {
+      "step": 10,
+      "example_ids": [
+        "contractnli:171:nda-15",
+        "contractnli:338:nda-13"
+      ],
+      "loss": 0.025138722732663155,
+      "gradient_norm": 2.4535610675811768
+    },
+    {
+      "step": 11,
+      "example_ids": [
+        "contractnli:238:nda-16",
+        "contractnli:96:nda-5"
+      ],
+      "loss": 0.06953899189829826,
+      "gradient_norm": 7.695784568786621
+    },
+    {
+      "step": 12,
+      "example_ids": [
+        "contractnli:211:nda-17",
+        "contractnli:141:nda-2"
+      ],
+      "loss": 0.1449817712418735,
+      "gradient_norm": 15.682689666748047
+    },
+    {
+      "step": 13,
+      "example_ids": [
+        "contractnli:269:nda-1",
+        "contractnli:141:nda-5"
+      ],
+      "loss": 1.9537196776363999,
+      "gradient_norm": 72.06537628173828
+    },
+    {
+      "step": 14,
+      "example_ids": [
+        "contractnli:141:nda-4",
+        "contractnli:141:nda-20"
+      ],
+      "loss": 0.42084585037082434,
+      "gradient_norm": 34.76948165893555
+    },
+    {
+      "step": 15,
+      "example_ids": [
+        "contractnli:282:nda-3",
+        "contractnli:269:nda-15"
+      ],
+      "loss": 0.05252926051616669,
+      "gradient_norm": 3.06943416595459
+    },
+    {
+      "step": 16,
+      "example_ids": [
+        "contractnli:141:nda-18",
+        "contractnli:449:nda-19"
+      ],
+      "loss": 0.009630902466597036,
+      "gradient_norm": 1.5010929107666016
+    },
+    {
+      "step": 17,
+      "example_ids": [
+        "contractnli:597:nda-20",
+        "contractnli:338:nda-11"
+      ],
+      "loss": 0.003520982470945455,
+      "gradient_norm": 0.6172436475753784
+    },
+    {
+      "step": 18,
+      "example_ids": [
+        "contractnli:425:nda-15",
+        "contractnli:308:nda-17"
+      ],
+      "loss": 0.23530655726790428,
+      "gradient_norm": 18.5555477142334
+    },
+    {
+      "step": 19,
+      "example_ids": [
+        "contractnli:390:nda-10",
+        "contractnli:238:nda-18"
+      ],
+      "loss": 0.0001144289931289677,
+      "gradient_norm": 0.025714006274938583
+    },
+    {
+      "step": 20,
+      "example_ids": [
+        "contractnli:282:nda-19",
+        "contractnli:390:nda-19"
+      ],
+      "loss": 0.0014278007238317514,
+      "gradient_norm": 0.26316261291503906
+    },
+    {
+      "step": 21,
+      "example_ids": [
+        "contractnli:141:nda-16",
+        "contractnli:171:nda-8"
+      ],
+      "loss": 1.7043581005636952,
+      "gradient_norm": 92.88520050048828
+    },
+    {
+      "step": 22,
+      "example_ids": [
+        "contractnli:238:nda-10",
+        "contractnli:100:nda-17"
+      ],
+      "loss": 0.016828775405770102,
+      "gradient_norm": 3.9358420372009277
+    },
+    {
+      "step": 23,
+      "example_ids": [
+        "contractnli:366:nda-1",
+        "contractnli:96:nda-3"
+      ],
+      "loss": 1.7043296098706833,
+      "gradient_norm": 121.26103973388672
+    },
+    {
+      "step": 24,
+      "example_ids": [
+        "contractnli:470:nda-3",
+        "contractnli:366:nda-7"
+      ],
+      "loss": 2.7798717096447945,
+      "gradient_norm": 158.3378143310547
+    },
+    {
+      "step": 25,
+      "example_ids": [
+        "contractnli:366:nda-13",
+        "contractnli:282:nda-1"
+      ],
+      "loss": 1.764876365661621,
+      "gradient_norm": 136.98931884765625
+    },
+    {
+      "step": 26,
+      "example_ids": [
+        "contractnli:366:nda-16",
+        "contractnli:282:nda-12"
+      ],
+      "loss": 1.3474681377410889,
+      "gradient_norm": 120.18746948242188
+    },
+    {
+      "step": 27,
+      "example_ids": [
+        "contractnli:425:nda-10",
+        "contractnli:120:nda-11"
+      ],
+      "loss": 0.0,
+      "gradient_norm": 2.5730550987645984e-06
+    },
+    {
+      "step": 28,
+      "example_ids": [
+        "contractnli:120:nda-20",
+        "contractnli:120:nda-2"
+      ],
+      "loss": 16.562631130218506,
+      "gradient_norm": 337.5318603515625
+    },
+    {
+      "step": 29,
+      "example_ids": [
+        "contractnli:282:nda-7",
+        "contractnli:253:nda-10"
+      ],
+      "loss": 3.8127442598342753,
+      "gradient_norm": 141.6197052001953
+    },
+    {
+      "step": 30,
+      "example_ids": [
+        "contractnli:282:nda-15",
+        "contractnli:188:nda-7"
+      ],
+      "loss": 8.25032114977148,
+      "gradient_norm": 157.22872924804688
+    },
+    {
+      "step": 31,
+      "example_ids": [
+        "contractnli:211:nda-15",
+        "contractnli:211:nda-10"
+      ],
+      "loss": 0.006255614105498353,
+      "gradient_norm": 1.2586314678192139
+    },
+    {
+      "step": 32,
+      "example_ids": [
+        "contractnli:253:nda-20",
+        "contractnli:338:nda-8"
+      ],
+      "loss": 0.005880693405742932,
+      "gradient_norm": 1.2129485607147217
+    },
+    {
+      "step": 33,
+      "example_ids": [
+        "contractnli:308:nda-2",
+        "contractnli:282:nda-2"
+      ],
+      "loss": 0.48706513643259086,
+      "gradient_norm": 65.72241973876953
+    },
+    {
+      "step": 34,
+      "example_ids": [
+        "contractnli:238:nda-13",
+        "contractnli:188:nda-4"
+      ],
+      "loss": 1.1260500033386052,
+      "gradient_norm": 81.98822784423828
+    },
+    {
+      "step": 35,
+      "example_ids": [
+        "contractnli:308:nda-11",
+        "contractnli:597:nda-2"
+      ],
+      "loss": 3.3377607906004414e-05,
+      "gradient_norm": 0.006805425975471735
+    },
+    {
+      "step": 36,
+      "example_ids": [
+        "contractnli:390:nda-12",
+        "contractnli:308:nda-16"
+      ],
+      "loss": 2.0091994969588995,
+      "gradient_norm": 71.75112915039062
+    },
+    {
+      "step": 37,
+      "example_ids": [
+        "contractnli:492:nda-20",
+        "contractnli:449:nda-3"
+      ],
+      "loss": 1.647566795349121,
+      "gradient_norm": 63.48459243774414
+    },
+    {
+      "step": 38,
+      "example_ids": [
+        "contractnli:390:nda-17",
+        "contractnli:308:nda-18"
+      ],
+      "loss": 0.005883971613002359,
+      "gradient_norm": 0.9620720148086548
+    },
+    {
+      "step": 39,
+      "example_ids": [
+        "contractnli:100:nda-2",
+        "contractnli:492:nda-19"
+      ],
+      "loss": 2.9070181250572205,
+      "gradient_norm": 70.5057373046875
+    },
+    {
+      "step": 40,
+      "example_ids": [
+        "contractnli:282:nda-16",
+        "contractnli:120:nda-12"
+      ],
+      "loss": 0.2621435165274306,
+      "gradient_norm": 28.090471267700195
+    },
+    {
+      "step": 41,
+      "example_ids": [
+        "contractnli:425:nda-18",
+        "contractnli:308:nda-10"
+      ],
+      "loss": 7.7600784607057e-05,
+      "gradient_norm": 0.013115884736180305
+    },
+    {
+      "step": 42,
+      "example_ids": [
+        "contractnli:390:nda-2",
+        "contractnli:96:nda-8"
+      ],
+      "loss": 0.00011860304039146286,
+      "gradient_norm": 0.01921527273952961
+    },
+    {
+      "step": 43,
+      "example_ids": [
+        "contractnli:100:nda-5",
+        "contractnli:390:nda-15"
+      ],
+      "loss": 0.6987878382205963,
+      "gradient_norm": 15.701643943786621
+    },
+    {
+      "step": 44,
+      "example_ids": [
+        "contractnli:308:nda-7",
+        "contractnli:390:nda-18"
+      ],
+      "loss": 1.5989609946373093,
+      "gradient_norm": 53.99726486206055
+    },
+    {
+      "step": 45,
+      "example_ids": [
+        "contractnli:449:nda-1",
+        "contractnli:188:nda-19"
+      ],
+      "loss": 0.0030553323013009503,
+      "gradient_norm": 0.4648539125919342
+    },
+    {
+      "step": 46,
+      "example_ids": [
+        "contractnli:390:nda-4",
+        "contractnli:338:nda-2"
+      ],
+      "loss": 1.7533259652554989,
+      "gradient_norm": 57.49840545654297
+    },
+    {
+      "step": 47,
+      "example_ids": [
+        "contractnli:597:nda-13",
+        "contractnli:188:nda-11"
+      ],
+      "loss": 0.002575200818682788,
+      "gradient_norm": 0.3831155002117157
+    },
+    {
+      "step": 48,
+      "example_ids": [
+        "contractnli:211:nda-16",
+        "contractnli:282:nda-10"
+      ],
+      "loss": 0.014989822549978271,
+      "gradient_norm": 1.8452469110488892
+    },
+    {
+      "step": 49,
+      "example_ids": [
+        "contractnli:188:nda-3",
+        "contractnli:211:nda-8"
+      ],
+      "loss": 0.05420265160501003,
+      "gradient_norm": 6.458413600921631
+    },
+    {
+      "step": 50,
+      "example_ids": [
+        "contractnli:390:nda-7",
+        "contractnli:470:nda-17"
+      ],
+      "loss": 0.8510936498641968,
+      "gradient_norm": 47.01486587524414
+    },
+    {
+      "step": 51,
+      "example_ids": [
+        "contractnli:171:nda-12",
+        "contractnli:597:nda-12"
+      ],
+      "loss": 1.431142970919609,
+      "gradient_norm": 80.2274169921875
+    },
+    {
+      "step": 52,
+      "example_ids": [
+        "contractnli:492:nda-10",
+        "contractnli:238:nda-17"
+      ],
+      "loss": 0.9862593151628971,
+      "gradient_norm": 53.21333312988281
+    },
+    {
+      "step": 53,
+      "example_ids": [
+        "contractnli:253:nda-15",
+        "contractnli:253:nda-17"
+      ],
+      "loss": 0.12983449312741868,
+      "gradient_norm": 13.712101936340332
+    },
+    {
+      "step": 54,
+      "example_ids": [
+        "contractnli:366:nda-17",
+        "contractnli:141:nda-3"
+      ],
+      "loss": 1.6779899448156357,
+      "gradient_norm": 65.65765380859375
+    },
+    {
+      "step": 55,
+      "example_ids": [
+        "contractnli:171:nda-13",
+        "contractnli:366:nda-4"
+      ],
+      "loss": 0.07996250689029694,
+      "gradient_norm": 3.6223762035369873
+    },
+    {
+      "step": 56,
+      "example_ids": [
+        "contractnli:211:nda-2",
+        "contractnli:253:nda-18"
+      ],
+      "loss": 0.000192496670933906,
+      "gradient_norm": 0.02865774743258953
+    },
+    {
+      "step": 57,
+      "example_ids": [
+        "contractnli:282:nda-5",
+        "contractnli:338:nda-18"
+      ],
+      "loss": 0.06962869928611326,
+      "gradient_norm": 6.952389717102051
+    },
+    {
+      "step": 58,
+      "example_ids": [
+        "contractnli:100:nda-3",
+        "contractnli:171:nda-17"
+      ],
+      "loss": 0.0550478151999414,
+      "gradient_norm": 6.821402549743652
+    },
+    {
+      "step": 59,
+      "example_ids": [
+        "contractnli:100:nda-8",
+        "contractnli:171:nda-16"
+      ],
+      "loss": 0.00028848696456407197,
+      "gradient_norm": 0.04108712077140808
+    },
+    {
+      "step": 60,
+      "example_ids": [
+        "contractnli:269:nda-3",
+        "contractnli:366:nda-2"
+      ],
+      "loss": 1.5246846548398025,
+      "gradient_norm": 65.90879821777344
+    },
+    {
+      "step": 61,
+      "example_ids": [
+        "contractnli:597:nda-18",
+        "contractnli:211:nda-19"
+      ],
+      "loss": 0.8398662209510803,
+      "gradient_norm": 18.60154151916504
+    },
+    {
+      "step": 62,
+      "example_ids": [
+        "contractnli:366:nda-5",
+        "contractnli:171:nda-3"
+      ],
+      "loss": 0.009365020378027111,
+      "gradient_norm": 1.0010734796524048
+    },
+    {
+      "step": 63,
+      "example_ids": [
+        "contractnli:492:nda-1",
+        "contractnli:282:nda-11"
+      ],
+      "loss": 0.00021686594118364155,
+      "gradient_norm": 0.031237060204148293
+    },
+    {
+      "step": 64,
+      "example_ids": [
+        "contractnli:269:nda-12",
+        "contractnli:470:nda-5"
+      ],
+      "loss": 0.3822542520938441,
+      "gradient_norm": 35.16387939453125
+    }
+  ],
+  "validation_loss_before": 0.734458004056839,
+  "validation_loss_after": 1.0044152201502423,
+  "validation_improved": false,
+  "training_seconds": 681.1449147919775,
+  "train_ids": [
+    "contractnli:100:nda-1",
+    "contractnli:100:nda-10",
+    "contractnli:100:nda-11",
+    "contractnli:100:nda-12",
+    "contractnli:100:nda-13",
+    "contractnli:100:nda-15",
+    "contractnli:100:nda-16",
+    "contractnli:100:nda-17",
+    "contractnli:100:nda-18",
+    "contractnli:100:nda-19",
+    "contractnli:100:nda-2",
+    "contractnli:100:nda-20",
+    "contractnli:100:nda-3",
+    "contractnli:100:nda-4",
+    "contractnli:100:nda-5",
+    "contractnli:100:nda-7",
+    "contractnli:100:nda-8",
+    "contractnli:120:nda-1",
+    "contractnli:120:nda-10",
+    "contractnli:120:nda-11",
+    "contractnli:120:nda-12",
+    "contractnli:120:nda-13",
+    "contractnli:120:nda-15",
+    "contractnli:120:nda-16",
+    "contractnli:120:nda-17",
+    "contractnli:120:nda-18",
+    "contractnli:120:nda-19",
+    "contractnli:120:nda-2",
+    "contractnli:120:nda-20",
+    "contractnli:120:nda-3",
+    "contractnli:120:nda-4",
+    "contractnli:120:nda-5",
+    "contractnli:120:nda-7",
+    "contractnli:120:nda-8",
+    "contractnli:141:nda-1",
+    "contractnli:141:nda-10",
+    "contractnli:141:nda-11",
+    "contractnli:141:nda-12",
+    "contractnli:141:nda-13",
+    "contractnli:141:nda-15",
+    "contractnli:141:nda-16",
+    "contractnli:141:nda-17",
+    "contractnli:141:nda-18",
+    "contractnli:141:nda-19",
+    "contractnli:141:nda-2",
+    "contractnli:141:nda-20",
+    "contractnli:141:nda-3",
+    "contractnli:141:nda-4",
+    "contractnli:141:nda-5",
+    "contractnli:141:nda-7",
+    "contractnli:141:nda-8",
+    "contractnli:171:nda-1",
+    "contractnli:171:nda-10",
+    "contractnli:171:nda-11",
+    "contractnli:171:nda-12",
+    "contractnli:171:nda-13",
+    "contractnli:171:nda-15",
+    "contractnli:171:nda-16",
+    "contractnli:171:nda-17",
+    "contractnli:171:nda-18",
+    "contractnli:171:nda-19",
+    "contractnli:171:nda-2",
+    "contractnli:171:nda-20",
+    "contractnli:171:nda-3",
+    "contractnli:171:nda-4",
+    "contractnli:171:nda-5",
+    "contractnli:171:nda-7",
+    "contractnli:171:nda-8",
+    "contractnli:188:nda-1",
+    "contractnli:188:nda-10",
+    "contractnli:188:nda-11",
+    "contractnli:188:nda-12",
+    "contractnli:188:nda-13",
+    "contractnli:188:nda-15",
+    "contractnli:188:nda-16",
+    "contractnli:188:nda-17",
+    "contractnli:188:nda-18",
+    "contractnli:188:nda-19",
+    "contractnli:188:nda-2",
+    "contractnli:188:nda-20",
+    "contractnli:188:nda-3",
+    "contractnli:188:nda-4",
+    "contractnli:188:nda-5",
+    "contractnli:188:nda-7",
+    "contractnli:188:nda-8",
+    "contractnli:211:nda-1",
+    "contractnli:211:nda-10",
+    "contractnli:211:nda-11",
+    "contractnli:211:nda-12",
+    "contractnli:211:nda-13",
+    "contractnli:211:nda-15",
+    "contractnli:211:nda-16",
+    "contractnli:211:nda-17",
+    "contractnli:211:nda-18",
+    "contractnli:211:nda-19",
+    "contractnli:211:nda-2",
+    "contractnli:211:nda-20",
+    "contractnli:211:nda-3",
+    "contractnli:211:nda-4",
+    "contractnli:211:nda-5",
+    "contractnli:211:nda-7",
+    "contractnli:211:nda-8",
+    "contractnli:238:nda-1",
+    "contractnli:238:nda-10",
+    "contractnli:238:nda-11",
+    "contractnli:238:nda-12",
+    "contractnli:238:nda-13",
+    "contractnli:238:nda-15",
+    "contractnli:238:nda-16",
+    "contractnli:238:nda-17",
+    "contractnli:238:nda-18",
+    "contractnli:238:nda-19",
+    "contractnli:238:nda-2",
+    "contractnli:238:nda-20",
+    "contractnli:238:nda-3",
+    "contractnli:238:nda-4",
+    "contractnli:238:nda-5",
+    "contractnli:238:nda-7",
+    "contractnli:238:nda-8",
+    "contractnli:253:nda-1",
+    "contractnli:253:nda-10",
+    "contractnli:253:nda-11",
+    "contractnli:253:nda-12",
+    "contractnli:253:nda-13",
+    "contractnli:253:nda-15",
+    "contractnli:253:nda-16",
+    "contractnli:253:nda-17",
+    "contractnli:253:nda-18",
+    "contractnli:253:nda-19",
+    "contractnli:253:nda-2",
+    "contractnli:253:nda-20",
+    "contractnli:253:nda-3",
+    "contractnli:253:nda-4",
+    "contractnli:253:nda-5",
+    "contractnli:253:nda-7",
+    "contractnli:253:nda-8",
+    "contractnli:269:nda-1",
+    "contractnli:269:nda-10",
+    "contractnli:269:nda-11",
+    "contractnli:269:nda-12",
+    "contractnli:269:nda-13",
+    "contractnli:269:nda-15",
+    "contractnli:269:nda-16",
+    "contractnli:269:nda-17",
+    "contractnli:269:nda-18",
+    "contractnli:269:nda-19",
+    "contractnli:269:nda-2",
+    "contractnli:269:nda-20",
+    "contractnli:269:nda-3",
+    "contractnli:269:nda-4",
+    "contractnli:269:nda-5",
+    "contractnli:269:nda-7",
+    "contractnli:269:nda-8",
+    "contractnli:282:nda-1",
+    "contractnli:282:nda-10",
+    "contractnli:282:nda-11",
+    "contractnli:282:nda-12",
+    "contractnli:282:nda-13",
+    "contractnli:282:nda-15",
+    "contractnli:282:nda-16",
+    "contractnli:282:nda-17",
+    "contractnli:282:nda-18",
+    "contractnli:282:nda-19",
+    "contractnli:282:nda-2",
+    "contractnli:282:nda-20",
+    "contractnli:282:nda-3",
+    "contractnli:282:nda-4",
+    "contractnli:282:nda-5",
+    "contractnli:282:nda-7",
+    "contractnli:282:nda-8",
+    "contractnli:308:nda-1",
+    "contractnli:308:nda-10",
+    "contractnli:308:nda-11",
+    "contractnli:308:nda-12",
+    "contractnli:308:nda-13",
+    "contractnli:308:nda-15",
+    "contractnli:308:nda-16",
+    "contractnli:308:nda-17",
+    "contractnli:308:nda-18",
+    "contractnli:308:nda-19",
+    "contractnli:308:nda-2",
+    "contractnli:308:nda-20",
+    "contractnli:308:nda-3",
+    "contractnli:308:nda-4",
+    "contractnli:308:nda-5",
+    "contractnli:308:nda-7",
+    "contractnli:308:nda-8",
+    "contractnli:338:nda-1",
+    "contractnli:338:nda-10",
+    "contractnli:338:nda-11",
+    "contractnli:338:nda-12",
+    "contractnli:338:nda-13",
+    "contractnli:338:nda-15",
+    "contractnli:338:nda-16",
+    "contractnli:338:nda-17",
+    "contractnli:338:nda-18",
+    "contractnli:338:nda-19",
+    "contractnli:338:nda-2",
+    "contractnli:338:nda-20",
+    "contractnli:338:nda-3",
+    "contractnli:338:nda-4",
+    "contractnli:338:nda-5",
+    "contractnli:338:nda-7",
+    "contractnli:338:nda-8",
+    "contractnli:366:nda-1",
+    "contractnli:366:nda-10",
+    "contractnli:366:nda-11",
+    "contractnli:366:nda-12",
+    "contractnli:366:nda-13",
+    "contractnli:366:nda-15",
+    "contractnli:366:nda-16",
+    "contractnli:366:nda-17",
+    "contractnli:366:nda-18",
+    "contractnli:366:nda-19",
+    "contractnli:366:nda-2",
+    "contractnli:366:nda-20",
+    "contractnli:366:nda-3",
+    "contractnli:366:nda-4",
+    "contractnli:366:nda-5",
+    "contractnli:366:nda-7",
+    "contractnli:366:nda-8",
+    "contractnli:390:nda-1",
+    "contractnli:390:nda-10",
+    "contractnli:390:nda-11",
+    "contractnli:390:nda-12",
+    "contractnli:390:nda-13",
+    "contractnli:390:nda-15",
+    "contractnli:390:nda-16",
+    "contractnli:390:nda-17",
+    "contractnli:390:nda-18",
+    "contractnli:390:nda-19",
+    "contractnli:390:nda-2",
+    "contractnli:390:nda-20",
+    "contractnli:390:nda-3",
+    "contractnli:390:nda-4",
+    "contractnli:390:nda-5",
+    "contractnli:390:nda-7",
+    "contractnli:390:nda-8",
+    "contractnli:425:nda-1",
+    "contractnli:425:nda-10",
+    "contractnli:425:nda-11",
+    "contractnli:425:nda-12",
+    "contractnli:425:nda-13",
+    "contractnli:425:nda-15",
+    "contractnli:425:nda-16",
+    "contractnli:425:nda-17",
+    "contractnli:425:nda-18",
+    "contractnli:425:nda-19",
+    "contractnli:425:nda-2",
+    "contractnli:425:nda-20",
+    "contractnli:425:nda-3",
+    "contractnli:425:nda-4",
+    "contractnli:425:nda-5",
+    "contractnli:425:nda-7",
+    "contractnli:425:nda-8",
+    "contractnli:449:nda-1",
+    "contractnli:449:nda-10",
+    "contractnli:449:nda-11",
+    "contractnli:449:nda-12",
+    "contractnli:449:nda-13",
+    "contractnli:449:nda-15",
+    "contractnli:449:nda-16",
+    "contractnli:449:nda-17",
+    "contractnli:449:nda-18",
+    "contractnli:449:nda-19",
+    "contractnli:449:nda-2",
+    "contractnli:449:nda-20",
+    "contractnli:449:nda-3",
+    "contractnli:449:nda-4",
+    "contractnli:449:nda-5",
+    "contractnli:449:nda-7",
+    "contractnli:449:nda-8",
+    "contractnli:470:nda-1",
+    "contractnli:470:nda-10",
+    "contractnli:470:nda-11",
+    "contractnli:470:nda-12",
+    "contractnli:470:nda-13",
+    "contractnli:470:nda-15",
+    "contractnli:470:nda-16",
+    "contractnli:470:nda-17",
+    "contractnli:470:nda-18",
+    "contractnli:470:nda-19",
+    "contractnli:470:nda-2",
+    "contractnli:470:nda-20",
+    "contractnli:470:nda-3",
+    "contractnli:470:nda-4",
+    "contractnli:470:nda-5",
+    "contractnli:470:nda-7",
+    "contractnli:470:nda-8",
+    "contractnli:492:nda-1",
+    "contractnli:492:nda-10",
+    "contractnli:492:nda-11",
+    "contractnli:492:nda-12",
+    "contractnli:492:nda-13",
+    "contractnli:492:nda-15",
+    "contractnli:492:nda-16",
+    "contractnli:492:nda-17",
+    "contractnli:492:nda-18",
+    "contractnli:492:nda-19",
+    "contractnli:492:nda-2",
+    "contractnli:492:nda-20",
+    "contractnli:492:nda-3",
+    "contractnli:492:nda-4",
+    "contractnli:492:nda-5",
+    "contractnli:492:nda-7",
+    "contractnli:492:nda-8",
+    "contractnli:597:nda-1",
+    "contractnli:597:nda-10",
+    "contractnli:597:nda-11",
+    "contractnli:597:nda-12",
+    "contractnli:597:nda-13",
+    "contractnli:597:nda-15",
+    "contractnli:597:nda-16",
+    "contractnli:597:nda-17",
+    "contractnli:597:nda-18",
+    "contractnli:597:nda-19",
+    "contractnli:597:nda-2",
+    "contractnli:597:nda-20",
+    "contractnli:597:nda-3",
+    "contractnli:597:nda-4",
+    "contractnli:597:nda-5",
+    "contractnli:597:nda-7",
+    "contractnli:597:nda-8",
+    "contractnli:96:nda-1",
+    "contractnli:96:nda-10",
+    "contractnli:96:nda-11",
+    "contractnli:96:nda-12",
+    "contractnli:96:nda-13",
+    "contractnli:96:nda-15",
+    "contractnli:96:nda-16",
+    "contractnli:96:nda-17",
+    "contractnli:96:nda-18",
+    "contractnli:96:nda-19",
+    "contractnli:96:nda-2",
+    "contractnli:96:nda-20",
+    "contractnli:96:nda-3",
+    "contractnli:96:nda-4",
+    "contractnli:96:nda-5",
+    "contractnli:96:nda-7",
+    "contractnli:96:nda-8"
+  ],
+  "valid_ids": [
+    "contractnli:152:nda-1",
+    "contractnli:152:nda-10",
+    "contractnli:152:nda-11",
+    "contractnli:152:nda-12",
+    "contractnli:152:nda-13",
+    "contractnli:152:nda-15",
+    "contractnli:152:nda-16",
+    "contractnli:152:nda-17",
+    "contractnli:152:nda-18",
+    "contractnli:152:nda-19",
+    "contractnli:152:nda-2",
+    "contractnli:152:nda-20",
+    "contractnli:152:nda-3",
+    "contractnli:152:nda-4",
+    "contractnli:152:nda-5",
+    "contractnli:152:nda-7",
+    "contractnli:152:nda-8",
+    "contractnli:20:nda-1",
+    "contractnli:20:nda-10",
+    "contractnli:20:nda-11",
+    "contractnli:20:nda-12",
+    "contractnli:20:nda-13",
+    "contractnli:20:nda-15",
+    "contractnli:20:nda-16",
+    "contractnli:20:nda-17",
+    "contractnli:20:nda-18",
+    "contractnli:20:nda-19",
+    "contractnli:20:nda-2",
+    "contractnli:20:nda-20",
+    "contractnli:20:nda-3",
+    "contractnli:20:nda-4",
+    "contractnli:20:nda-5",
+    "contractnli:20:nda-7",
+    "contractnli:20:nda-8",
+    "contractnli:482:nda-1",
+    "contractnli:482:nda-10",
+    "contractnli:482:nda-11",
+    "contractnli:482:nda-12",
+    "contractnli:482:nda-13",
+    "contractnli:482:nda-15",
+    "contractnli:482:nda-16",
+    "contractnli:482:nda-17",
+    "contractnli:482:nda-18",
+    "contractnli:482:nda-19",
+    "contractnli:482:nda-2",
+    "contractnli:482:nda-20",
+    "contractnli:482:nda-3",
+    "contractnli:482:nda-4",
+    "contractnli:482:nda-5",
+    "contractnli:482:nda-7",
+    "contractnli:482:nda-8",
+    "contractnli:81:nda-1",
+    "contractnli:81:nda-10",
+    "contractnli:81:nda-11",
+    "contractnli:81:nda-12",
+    "contractnli:81:nda-13",
+    "contractnli:81:nda-15",
+    "contractnli:81:nda-16",
+    "contractnli:81:nda-17",
+    "contractnli:81:nda-18",
+    "contractnli:81:nda-19",
+    "contractnli:81:nda-2",
+    "contractnli:81:nda-20",
+    "contractnli:81:nda-3",
+    "contractnli:81:nda-4",
+    "contractnli:81:nda-5",
+    "contractnli:81:nda-7",
+    "contractnli:81:nda-8"
+  ],
+  "train_sha256": "3cd5a5e8a26ba14f0b5e901054734ba028ad7fbe1551d886748482be37db2679",
+  "valid_sha256": "2ebab85b407cc8164b6d100adedd38cceefa18e8091f1dce0b983d302fe1e4ca",
+  "contract_sha256": "b02117a09d2ff8da50cda75ee218dabbf0916cb8e6c4e5dab5afecc5a30bfb12",
+  "adapter_sha256": "7bb11aca0a691d3aa060b4acf368fa2eb959eb394f3d59c4c0ea145fba999cde",
+  "adapter_config_sha256": "07e0139f3dbaf12b8dc9b3665583fb89eff239c4b964f77d96c10f3a648246ed"
+}

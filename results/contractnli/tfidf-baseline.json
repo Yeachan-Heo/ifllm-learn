@@ -1,0 +1,124 @@
+{
+  "count": 170,
+  "accuracy": 0.40588235294117647,
+  "macro_f1": 0.1924686192468619,
+  "log_loss": 0.9589512934915055,
+  "brier": 0.5935363509811756,
+  "brier_definition": "mean sum of squared class probability errors",
+  "confusion_matrix": [
+    [
+      0,
+      0,
+      82
+    ],
+    [
+      0,
+      0,
+      19
+    ],
+    [
+      0,
+      0,
+      69
+    ]
+  ],
+  "ece_10_bins": 0.14869231671308156,
+  "reliability_bins": [
+    {
+      "lower": 0.0,
+      "upper": 0.1,
+      "count": 0,
+      "accuracy": null,
+      "mean_confidence": null
+    },
+    {
+      "lower": 0.1,
+      "upper": 0.2,
+      "count": 0,
+      "accuracy": null,
+      "mean_confidence": null
+    },
+    {
+      "lower": 0.2,
+      "upper": 0.3,
+      "count": 0,
+      "accuracy": null,
+      "mean_confidence": null
+    },
+    {
+      "lower": 0.3,
+      "upper": 0.4,
+      "count": 0,
+      "accuracy": null,
+      "mean_confidence": null
+    },
+    {
+      "lower": 0.4,
+      "upper": 0.5,
+      "count": 33,
+      "accuracy": 0.12121212121212122,
+      "mean_confidence": 0.480311984693492
+    },
+    {
+      "lower": 0.5,
+      "upper": 0.6,
+      "count": 132,
+      "accuracy": 0.45454545454545453,
+      "mean_confidence": 0.5416495697686932
+    },
+    {
+      "lower": 0.6,
+      "upper": 0.7,
+      "count": 5,
+      "accuracy": 1.0,
+      "mean_confidence": 0.6140689726257753
+    },
+    {
+      "lower": 0.7,
+      "upper": 0.8,
+      "count": 0,
+      "accuracy": null,
+      "mean_confidence": null
+    },
+    {
+      "lower": 0.8,
+      "upper": 0.9,
+      "count": 0,
+      "accuracy": null,
+      "mean_confidence": null
+    },
+    {
+      "lower": 0.9,
+      "upper": 1.0,
+      "count": 0,
+      "accuracy": null,
+      "mean_confidence": null
+    }
+  ],
+  "model_description": "scikit-learn word TF-IDF (1,2) with logistic regression; trained on question and prompt only",
+  "hyperparameters": {
+    "tfidf": {
+      "analyzer": "word",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "sublinear_tf": true
+    },
+    "logistic_regression": {
+      "C": 1,
+      "max_iter": 1000,
+      "random_state": 17
+    }
+  },
+  "vocabulary_size": 11158,
+  "fit_seconds": 0.1621172500308603,
+  "predict_seconds": 0.053974667040165514,
+  "train_count": 340,
+  "test_count": 170,
+  "option_ids": [
+    "entailment",
+    "contradiction",
+    "not_mentioned"
+  ]
+}

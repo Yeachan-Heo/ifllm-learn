@@ -1,0 +1,4628 @@
+{
+  "format": "ifllm-learn.experiment.v2",
+  "run": {
+    "steps": 64,
+    "learning_rate": 1e-05,
+    "num_layers": 2,
+    "rank": 8,
+    "max_tokens": 2048,
+    "seed": 17,
+    "bits": null,
+    "batch_size": 2,
+    "full_counts": {
+      "train": 3417,
+      "valid": 204,
+      "calibration": 238,
+      "test": 1088
+    },
+    "selected_counts": {
+      "train": 340,
+      "valid": 68,
+      "calibration": 136,
+      "test": 170
+    },
+    "selected_ids": {
+      "train": [
+        "contractnli:100:nda-1",
+        "contractnli:100:nda-10",
+        "contractnli:100:nda-11",
+        "contractnli:100:nda-12",
+        "contractnli:100:nda-13",
+        "contractnli:100:nda-15",
+        "contractnli:100:nda-16",
+        "contractnli:100:nda-17",
+        "contractnli:100:nda-18",
+        "contractnli:100:nda-19",
+        "contractnli:100:nda-2",
+        "contractnli:100:nda-20",
+        "contractnli:100:nda-3",
+        "contractnli:100:nda-4",
+        "contractnli:100:nda-5",
+        "contractnli:100:nda-7",
+        "contractnli:100:nda-8",
+        "contractnli:120:nda-1",
+        "contractnli:120:nda-10",
+        "contractnli:120:nda-11",
+        "contractnli:120:nda-12",
+        "contractnli:120:nda-13",
+        "contractnli:120:nda-15",
+        "contractnli:120:nda-16",
+        "contractnli:120:nda-17",
+        "contractnli:120:nda-18",
+        "contractnli:120:nda-19",
+        "contractnli:120:nda-2",
+        "contractnli:120:nda-20",
+        "contractnli:120:nda-3",
+        "contractnli:120:nda-4",
+        "contractnli:120:nda-5",
+        "contractnli:120:nda-7",
+        "contractnli:120:nda-8",
+        "contractnli:141:nda-1",
+        "contractnli:141:nda-10",
+        "contractnli:141:nda-11",
+        "contractnli:141:nda-12",
+        "contractnli:141:nda-13",
+        "contractnli:141:nda-15",
+        "contractnli:141:nda-16",
+        "contractnli:141:nda-17",
+        "contractnli:141:nda-18",
+        "contractnli:141:nda-19",
+        "contractnli:141:nda-2",
+        "contractnli:141:nda-20",
+        "contractnli:141:nda-3",
+        "contractnli:141:nda-4",
+        "contractnli:141:nda-5",
+        "contractnli:141:nda-7",
+        "contractnli:141:nda-8",
+        "contractnli:171:nda-1",
+        "contractnli:171:nda-10",
+        "contractnli:171:nda-11",
+        "contractnli:171:nda-12",
+        "contractnli:171:nda-13",
+        "contractnli:171:nda-15",
+        "contractnli:171:nda-16",
+        "contractnli:171:nda-17",
+        "contractnli:171:nda-18",
+        "contractnli:171:nda-19",
+        "contractnli:171:nda-2",
+        "contractnli:171:nda-20",
+        "contractnli:171:nda-3",
+        "contractnli:171:nda-4",
+        "contractnli:171:nda-5",
+        "contractnli:171:nda-7",
+        "contractnli:171:nda-8",
+        "contractnli:188:nda-1",
+        "contractnli:188:nda-10",
+        "contractnli:188:nda-11",
+        "contractnli:188:nda-12",
+        "contractnli:188:nda-13",
+        "contractnli:188:nda-15",
+        "contractnli:188:nda-16",
+        "contractnli:188:nda-17",
+        "contractnli:188:nda-18",
+        "contractnli:188:nda-19",
+        "contractnli:188:nda-2",
+        "contractnli:188:nda-20",
+        "contractnli:188:nda-3",
+        "contractnli:188:nda-4",
+        "contractnli:188:nda-5",
+        "contractnli:188:nda-7",
+        "contractnli:188:nda-8",
+        "contractnli:211:nda-1",
+        "contractnli:211:nda-10",
+        "contractnli:211:nda-11",
+        "contractnli:211:nda-12",
+        "contractnli:211:nda-13",
+        "contractnli:211:nda-15",
+        "contractnli:211:nda-16",
+        "contractnli:211:nda-17",
+        "contractnli:211:nda-18",
+        "contractnli:211:nda-19",
+        "contractnli:211:nda-2",
+        "contractnli:211:nda-20",
+        "contractnli:211:nda-3",
+        "contractnli:211:nda-4",
+        "contractnli:211:nda-5",
+        "contractnli:211:nda-7",
+        "contractnli:211:nda-8",
+        "contractnli:238:nda-1",
+        "contractnli:238:nda-10",
+        "contractnli:238:nda-11",
+        "contractnli:238:nda-12",
+        "contractnli:238:nda-13",
+        "contractnli:238:nda-15",
+        "contractnli:238:nda-16",
+        "contractnli:238:nda-17",
+        "contractnli:238:nda-18",
+        "contractnli:238:nda-19",
+        "contractnli:238:nda-2",
+        "contractnli:238:nda-20",
+        "contractnli:238:nda-3",
+        "contractnli:238:nda-4",
+        "contractnli:238:nda-5",
+        "contractnli:238:nda-7",
+        "contractnli:238:nda-8",
+        "contractnli:253:nda-1",
+        "contractnli:253:nda-10",
+        "contractnli:253:nda-11",
+        "contractnli:253:nda-12",
+        "contractnli:253:nda-13",
+        "contractnli:253:nda-15",
+        "contractnli:253:nda-16",
+        "contractnli:253:nda-17",
+        "contractnli:253:nda-18",
+        "contractnli:253:nda-19",
+        "contractnli:253:nda-2",
+        "contractnli:253:nda-20",
+        "contractnli:253:nda-3",
+        "contractnli:253:nda-4",
+        "contractnli:253:nda-5",
+        "contractnli:253:nda-7",
+        "contractnli:253:nda-8",
+        "contractnli:269:nda-1",
+        "contractnli:269:nda-10",
+        "contractnli:269:nda-11",
+        "contractnli:269:nda-12",
+        "contractnli:269:nda-13",
+        "contractnli:269:nda-15",
+        "contractnli:269:nda-16",
+        "contractnli:269:nda-17",
+        "contractnli:269:nda-18",
+        "contractnli:269:nda-19",
+        "contractnli:269:nda-2",
+        "contractnli:269:nda-20",
+        "contractnli:269:nda-3",
+        "contractnli:269:nda-4",
+        "contractnli:269:nda-5",
+        "contractnli:269:nda-7",
+        "contractnli:269:nda-8",
+        "contractnli:282:nda-1",
+        "contractnli:282:nda-10",
+        "contractnli:282:nda-11",
+        "contractnli:282:nda-12",
+        "contractnli:282:nda-13",
+        "contractnli:282:nda-15",
+        "contractnli:282:nda-16",
+        "contractnli:282:nda-17",
+        "contractnli:282:nda-18",
+        "contractnli:282:nda-19",
+        "contractnli:282:nda-2",
+        "contractnli:282:nda-20",
+        "contractnli:282:nda-3",
+        "contractnli:282:nda-4",
+        "contractnli:282:nda-5",
+        "contractnli:282:nda-7",
+        "contractnli:282:nda-8",
+        "contractnli:308:nda-1",
+        "contractnli:308:nda-10",
+        "contractnli:308:nda-11",
+        "contractnli:308:nda-12",
+        "contractnli:308:nda-13",
+        "contractnli:308:nda-15",
+        "contractnli:308:nda-16",
+        "contractnli:308:nda-17",
+        "contractnli:308:nda-18",
+        "contractnli:308:nda-19",
+        "contractnli:308:nda-2",
+        "contractnli:308:nda-20",
+        "contractnli:308:nda-3",
+        "contractnli:308:nda-4",
+        "contractnli:308:nda-5",
+        "contractnli:308:nda-7",
+        "contractnli:308:nda-8",
+        "contractnli:338:nda-1",
+        "contractnli:338:nda-10",
+        "contractnli:338:nda-11",
+        "contractnli:338:nda-12",
+        "contractnli:338:nda-13",
+        "contractnli:338:nda-15",
+        "contractnli:338:nda-16",
+        "contractnli:338:nda-17",
+        "contractnli:338:nda-18",
+        "contractnli:338:nda-19",
+        "contractnli:338:nda-2",
+        "contractnli:338:nda-20",
+        "contractnli:338:nda-3",
+        "contractnli:338:nda-4",
+        "contractnli:338:nda-5",
+        "contractnli:338:nda-7",
+        "contractnli:338:nda-8",
+        "contractnli:366:nda-1",
+        "contractnli:366:nda-10",
+        "contractnli:366:nda-11",
+        "contractnli:366:nda-12",
+        "contractnli:366:nda-13",
+        "contractnli:366:nda-15",
+        "contractnli:366:nda-16",
+        "contractnli:366:nda-17",
+        "contractnli:366:nda-18",
+        "contractnli:366:nda-19",
+        "contractnli:366:nda-2",
+        "contractnli:366:nda-20",
+        "contractnli:366:nda-3",
+        "contractnli:366:nda-4",
+        "contractnli:366:nda-5",
+        "contractnli:366:nda-7",
+        "contractnli:366:nda-8",
+        "contractnli:390:nda-1",
+        "contractnli:390:nda-10",
+        "contractnli:390:nda-11",
+        "contractnli:390:nda-12",
+        "contractnli:390:nda-13",
+        "contractnli:390:nda-15",
+        "contractnli:390:nda-16",
+        "contractnli:390:nda-17",
+        "contractnli:390:nda-18",
+        "contractnli:390:nda-19",
+        "contractnli:390:nda-2",
+        "contractnli:390:nda-20",
+        "contractnli:390:nda-3",
+        "contractnli:390:nda-4",
+        "contractnli:390:nda-5",
+        "contractnli:390:nda-7",
+        "contractnli:390:nda-8",
+        "contractnli:425:nda-1",
+        "contractnli:425:nda-10",
+        "contractnli:425:nda-11",
+        "contractnli:425:nda-12",
+        "contractnli:425:nda-13",
+        "contractnli:425:nda-15",
+        "contractnli:425:nda-16",
+        "contractnli:425:nda-17",
+        "contractnli:425:nda-18",
+        "contractnli:425:nda-19",
+        "contractnli:425:nda-2",
+        "contractnli:425:nda-20",
+        "contractnli:425:nda-3",
+        "contractnli:425:nda-4",
+        "contractnli:425:nda-5",
+        "contractnli:425:nda-7",
+        "contractnli:425:nda-8",
+        "contractnli:449:nda-1",
+        "contractnli:449:nda-10",
+        "contractnli:449:nda-11",
+        "contractnli:449:nda-12",
+        "contractnli:449:nda-13",
+        "contractnli:449:nda-15",
+        "contractnli:449:nda-16",
+        "contractnli:449:nda-17",
+        "contractnli:449:nda-18",
+        "contractnli:449:nda-19",
+        "contractnli:449:nda-2",
+        "contractnli:449:nda-20",
+        "contractnli:449:nda-3",
+        "contractnli:449:nda-4",
+        "contractnli:449:nda-5",
+        "contractnli:449:nda-7",
+        "contractnli:449:nda-8",
+        "contractnli:470:nda-1",
+        "contractnli:470:nda-10",
+        "contractnli:470:nda-11",
+        "contractnli:470:nda-12",
+        "contractnli:470:nda-13",
+        "contractnli:470:nda-15",
+        "contractnli:470:nda-16",
+        "contractnli:470:nda-17",
+        "contractnli:470:nda-18",
+        "contractnli:470:nda-19",
+        "contractnli:470:nda-2",
+        "contractnli:470:nda-20",
+        "contractnli:470:nda-3",
+        "contractnli:470:nda-4",
+        "contractnli:470:nda-5",
+        "contractnli:470:nda-7",
+        "contractnli:470:nda-8",
+        "contractnli:492:nda-1",
+        "contractnli:492:nda-10",
+        "contractnli:492:nda-11",
+        "contractnli:492:nda-12",
+        "contractnli:492:nda-13",
+        "contractnli:492:nda-15",
+        "contractnli:492:nda-16",
+        "contractnli:492:nda-17",
+        "contractnli:492:nda-18",
+        "contractnli:492:nda-19",
+        "contractnli:492:nda-2",
+        "contractnli:492:nda-20",
+        "contractnli:492:nda-3",
+        "contractnli:492:nda-4",
+        "contractnli:492:nda-5",
+        "contractnli:492:nda-7",
+        "contractnli:492:nda-8",
+        "contractnli:597:nda-1",
+        "contractnli:597:nda-10",
+        "contractnli:597:nda-11",
+        "contractnli:597:nda-12",
+        "contractnli:597:nda-13",
+        "contractnli:597:nda-15",
+        "contractnli:597:nda-16",
+        "contractnli:597:nda-17",
+        "contractnli:597:nda-18",
+        "contractnli:597:nda-19",
+        "contractnli:597:nda-2",
+        "contractnli:597:nda-20",
+        "contractnli:597:nda-3",
+        "contractnli:597:nda-4",
+        "contractnli:597:nda-5",
+        "contractnli:597:nda-7",
+        "contractnli:597:nda-8",
+        "contractnli:96:nda-1",
+        "contractnli:96:nda-10",
+        "contractnli:96:nda-11",
+        "contractnli:96:nda-12",
+        "contractnli:96:nda-13",
+        "contractnli:96:nda-15",
+        "contractnli:96:nda-16",
+        "contractnli:96:nda-17",
+        "contractnli:96:nda-18",
+        "contractnli:96:nda-19",
+        "contractnli:96:nda-2",
+        "contractnli:96:nda-20",
+        "contractnli:96:nda-3",
+        "contractnli:96:nda-4",
+        "contractnli:96:nda-5",
+        "contractnli:96:nda-7",
+        "contractnli:96:nda-8"
+      ],
+      "valid": [
+        "contractnli:152:nda-1",
+        "contractnli:152:nda-10",
+        "contractnli:152:nda-11",
+        "contractnli:152:nda-12",
+        "contractnli:152:nda-13",
+        "contractnli:152:nda-15",
+        "contractnli:152:nda-16",
+        "contractnli:152:nda-17",
+        "contractnli:152:nda-18",
+        "contractnli:152:nda-19",
+        "contractnli:152:nda-2",
+        "contractnli:152:nda-20",
+        "contractnli:152:nda-3",
+        "contractnli:152:nda-4",
+        "contractnli:152:nda-5",
+        "contractnli:152:nda-7",
+        "contractnli:152:nda-8",
+        "contractnli:20:nda-1",
+        "contractnli:20:nda-10",
+        "contractnli:20:nda-11",
+        "contractnli:20:nda-12",
+        "contractnli:20:nda-13",
+        "contractnli:20:nda-15",
+        "contractnli:20:nda-16",
+        "contractnli:20:nda-17",
+        "contractnli:20:nda-18",
+        "contractnli:20:nda-19",
+        "contractnli:20:nda-2",
+        "contractnli:20:nda-20",
+        "contractnli:20:nda-3",
+        "contractnli:20:nda-4",
+        "contractnli:20:nda-5",
+        "contractnli:20:nda-7",
+        "contractnli:20:nda-8",
+        "contractnli:482:nda-1",
+        "contractnli:482:nda-10",
+        "contractnli:482:nda-11",
+        "contractnli:482:nda-12",
+        "contractnli:482:nda-13",
+        "contractnli:482:nda-15",
+        "contractnli:482:nda-16",
+        "contractnli:482:nda-17",
+        "contractnli:482:nda-18",
+        "contractnli:482:nda-19",
+        "contractnli:482:nda-2",
+        "contractnli:482:nda-20",
+        "contractnli:482:nda-3",
+        "contractnli:482:nda-4",
+        "contractnli:482:nda-5",
+        "contractnli:482:nda-7",
+        "contractnli:482:nda-8",
+        "contractnli:81:nda-1",
+        "contractnli:81:nda-10",
+        "contractnli:81:nda-11",
+        "contractnli:81:nda-12",
+        "contractnli:81:nda-13",
+        "contractnli:81:nda-15",
+        "contractnli:81:nda-16",
+        "contractnli:81:nda-17",
+        "contractnli:81:nda-18",
+        "contractnli:81:nda-19",
+        "contractnli:81:nda-2",
+        "contractnli:81:nda-20",
+        "contractnli:81:nda-3",
+        "contractnli:81:nda-4",
+        "contractnli:81:nda-5",
+        "contractnli:81:nda-7",
+        "contractnli:81:nda-8"
+      ],
+      "calibration": [
+        "contractnli:12:nda-1",
+        "contractnli:12:nda-10",
+        "contractnli:12:nda-11",
+        "contractnli:12:nda-12",
+        "contractnli:12:nda-13",
+        "contractnli:12:nda-15",
+        "contractnli:12:nda-16",
+        "contractnli:12:nda-17",
+        "contractnli:12:nda-18",
+        "contractnli:12:nda-19",
+        "contractnli:12:nda-2",
+        "contractnli:12:nda-20",
+        "contractnli:12:nda-3",
+        "contractnli:12:nda-4",
+        "contractnli:12:nda-5",
+        "contractnli:12:nda-7",
+        "contractnli:12:nda-8",
+        "contractnli:14:nda-1",
+        "contractnli:14:nda-10",
+        "contractnli:14:nda-11",
+        "contractnli:14:nda-12",
+        "contractnli:14:nda-13",
+        "contractnli:14:nda-15",
+        "contractnli:14:nda-16",
+        "contractnli:14:nda-17",
+        "contractnli:14:nda-18",
+        "contractnli:14:nda-19",
+        "contractnli:14:nda-2",
+        "contractnli:14:nda-20",
+        "contractnli:14:nda-3",
+        "contractnli:14:nda-4",
+        "contractnli:14:nda-5",
+        "contractnli:14:nda-7",
+        "contractnli:14:nda-8",
+        "contractnli:29:nda-1",
+        "contractnli:29:nda-10",
+        "contractnli:29:nda-11",
+        "contractnli:29:nda-12",
+        "contractnli:29:nda-13",
+        "contractnli:29:nda-15",
+        "contractnli:29:nda-16",
+        "contractnli:29:nda-17",
+        "contractnli:29:nda-18",
+        "contractnli:29:nda-19",
+        "contractnli:29:nda-2",
+        "contractnli:29:nda-20",
+        "contractnli:29:nda-3",
+        "contractnli:29:nda-4",
+        "contractnli:29:nda-5",
+        "contractnli:29:nda-7",
+        "contractnli:29:nda-8",
+        "contractnli:406:nda-1",
+        "contractnli:406:nda-10",
+        "contractnli:406:nda-11",
+        "contractnli:406:nda-12",
+        "contractnli:406:nda-13",
+        "contractnli:406:nda-15",
+        "contractnli:406:nda-16",
+        "contractnli:406:nda-17",
+        "contractnli:406:nda-18",
+        "contractnli:406:nda-19",
+        "contractnli:406:nda-2",
+        "contractnli:406:nda-20",
+        "contractnli:406:nda-3",
+        "contractnli:406:nda-4",
+        "contractnli:406:nda-5",
+        "contractnli:406:nda-7",
+        "contractnli:406:nda-8",
+        "contractnli:486:nda-1",
+        "contractnli:486:nda-10",
+        "contractnli:486:nda-11",
+        "contractnli:486:nda-12",
+        "contractnli:486:nda-13",
+        "contractnli:486:nda-15",
+        "contractnli:486:nda-16",
+        "contractnli:486:nda-17",
+        "contractnli:486:nda-18",
+        "contractnli:486:nda-19",
+        "contractnli:486:nda-2",
+        "contractnli:486:nda-20",
+        "contractnli:486:nda-3",
+        "contractnli:486:nda-4",
+        "contractnli:486:nda-5",
+        "contractnli:486:nda-7",
+        "contractnli:486:nda-8",
+        "contractnli:507:nda-1",
+        "contractnli:507:nda-10",
+        "contractnli:507:nda-11",
+        "contractnli:507:nda-12",
+        "contractnli:507:nda-13",
+        "contractnli:507:nda-15",
+        "contractnli:507:nda-16",
+        "contractnli:507:nda-17",
+        "contractnli:507:nda-18",
+        "contractnli:507:nda-19",
+        "contractnli:507:nda-2",
+        "contractnli:507:nda-20",
+        "contractnli:507:nda-3",
+        "contractnli:507:nda-4",
+        "contractnli:507:nda-5",
+        "contractnli:507:nda-7",
+        "contractnli:507:nda-8",
+        "contractnli:70:nda-1",
+        "contractnli:70:nda-10",
+        "contractnli:70:nda-11",
+        "contractnli:70:nda-12",
+        "contractnli:70:nda-13",
+        "contractnli:70:nda-15",
+        "contractnli:70:nda-16",
+        "contractnli:70:nda-17",
+        "contractnli:70:nda-18",
+        "contractnli:70:nda-19",
+        "contractnli:70:nda-2",
+        "contractnli:70:nda-20",
+        "contractnli:70:nda-3",
+        "contractnli:70:nda-4",
+        "contractnli:70:nda-5",
+        "contractnli:70:nda-7",
+        "contractnli:70:nda-8",
+        "contractnli:82:nda-1",
+        "contractnli:82:nda-10",
+        "contractnli:82:nda-11",
+        "contractnli:82:nda-12",
+        "contractnli:82:nda-13",
+        "contractnli:82:nda-15",
+        "contractnli:82:nda-16",
+        "contractnli:82:nda-17",
+        "contractnli:82:nda-18",
+        "contractnli:82:nda-19",
+        "contractnli:82:nda-2",
+        "contractnli:82:nda-20",
+        "contractnli:82:nda-3",
+        "contractnli:82:nda-4",
+        "contractnli:82:nda-5",
+        "contractnli:82:nda-7",
+        "contractnli:82:nda-8"
+      ],
+      "test": [
+        "contractnli:117:nda-1",
+        "contractnli:117:nda-10",
+        "contractnli:117:nda-11",
+        "contractnli:117:nda-12",
+        "contractnli:117:nda-13",
+        "contractnli:117:nda-15",
+        "contractnli:117:nda-16",
+        "contractnli:117:nda-17",
+        "contractnli:117:nda-18",
+        "contractnli:117:nda-19",
+        "contractnli:117:nda-2",
+        "contractnli:117:nda-20",
+        "contractnli:117:nda-3",
+        "contractnli:117:nda-4",
+        "contractnli:117:nda-5",
+        "contractnli:117:nda-7",
+        "contractnli:117:nda-8",
+        "contractnli:190:nda-1",
+        "contractnli:190:nda-10",
+        "contractnli:190:nda-11",
+        "contractnli:190:nda-12",
+        "contractnli:190:nda-13",
+        "contractnli:190:nda-15",
+        "contractnli:190:nda-16",
+        "contractnli:190:nda-17",
+        "contractnli:190:nda-18",
+        "contractnli:190:nda-19",
+        "contractnli:190:nda-2",
+        "contractnli:190:nda-20",
+        "contractnli:190:nda-3",
+        "contractnli:190:nda-4",
+        "contractnli:190:nda-5",
+        "contractnli:190:nda-7",
+        "contractnli:190:nda-8",
+        "contractnli:26:nda-1",
+        "contractnli:26:nda-10",
+        "contractnli:26:nda-11",
+        "contractnli:26:nda-12",
+        "contractnli:26:nda-13",
+        "contractnli:26:nda-15",
+        "contractnli:26:nda-16",
+        "contractnli:26:nda-17",
+        "contractnli:26:nda-18",
+        "contractnli:26:nda-19",
+        "contractnli:26:nda-2",
+        "contractnli:26:nda-20",
+        "contractnli:26:nda-3",
+        "contractnli:26:nda-4",
+        "contractnli:26:nda-5",
+        "contractnli:26:nda-7",
+        "contractnli:26:nda-8",
+        "contractnli:354:nda-1",
+        "contractnli:354:nda-10",
+        "contractnli:354:nda-11",
+        "contractnli:354:nda-12",
+        "contractnli:354:nda-13",
+        "contractnli:354:nda-15",
+        "contractnli:354:nda-16",
+        "contractnli:354:nda-17",
+        "contractnli:354:nda-18",
+        "contractnli:354:nda-19",
+        "contractnli:354:nda-2",
+        "contractnli:354:nda-20",
+        "contractnli:354:nda-3",
+        "contractnli:354:nda-4",
+        "contractnli:354:nda-5",
+        "contractnli:354:nda-7",
+        "contractnli:354:nda-8",
+        "contractnli:413:nda-1",
+        "contractnli:413:nda-10",
+        "contractnli:413:nda-11",
+        "contractnli:413:nda-12",
+        "contractnli:413:nda-13",
+        "contractnli:413:nda-15",
+        "contractnli:413:nda-16",
+        "contractnli:413:nda-17",
+        "contractnli:413:nda-18",
+        "contractnli:413:nda-19",
+        "contractnli:413:nda-2",
+        "contractnli:413:nda-20",
+        "contractnli:413:nda-3",
+        "contractnli:413:nda-4",
+        "contractnli:413:nda-5",
+        "contractnli:413:nda-7",
+        "contractnli:413:nda-8",
+        "contractnli:471:nda-1",
+        "contractnli:471:nda-10",
+        "contractnli:471:nda-11",
+        "contractnli:471:nda-12",
+        "contractnli:471:nda-13",
+        "contractnli:471:nda-15",
+        "contractnli:471:nda-16",
+        "contractnli:471:nda-17",
+        "contractnli:471:nda-18",
+        "contractnli:471:nda-19",
+        "contractnli:471:nda-2",
+        "contractnli:471:nda-20",
+        "contractnli:471:nda-3",
+        "contractnli:471:nda-4",
+        "contractnli:471:nda-5",
+        "contractnli:471:nda-7",
+        "contractnli:471:nda-8",
+        "contractnli:50:nda-1",
+        "contractnli:50:nda-10",
+        "contractnli:50:nda-11",
+        "contractnli:50:nda-12",
+        "contractnli:50:nda-13",
+        "contractnli:50:nda-15",
+        "contractnli:50:nda-16",
+        "contractnli:50:nda-17",
+        "contractnli:50:nda-18",
+        "contractnli:50:nda-19",
+        "contractnli:50:nda-2",
+        "contractnli:50:nda-20",
+        "contractnli:50:nda-3",
+        "contractnli:50:nda-4",
+        "contractnli:50:nda-5",
+        "contractnli:50:nda-7",
+        "contractnli:50:nda-8",
+        "contractnli:600:nda-1",
+        "contractnli:600:nda-10",
+        "contractnli:600:nda-11",
+        "contractnli:600:nda-12",
+        "contractnli:600:nda-13",
+        "contractnli:600:nda-15",
+        "contractnli:600:nda-16",
+        "contractnli:600:nda-17",
+        "contractnli:600:nda-18",
+        "contractnli:600:nda-19",
+        "contractnli:600:nda-2",
+        "contractnli:600:nda-20",
+        "contractnli:600:nda-3",
+        "contractnli:600:nda-4",
+        "contractnli:600:nda-5",
+        "contractnli:600:nda-7",
+        "contractnli:600:nda-8",
+        "contractnli:77:nda-1",
+        "contractnli:77:nda-10",
+        "contractnli:77:nda-11",
+        "contractnli:77:nda-12",
+        "contractnli:77:nda-13",
+        "contractnli:77:nda-15",
+        "contractnli:77:nda-16",
+        "contractnli:77:nda-17",
+        "contractnli:77:nda-18",
+        "contractnli:77:nda-19",
+        "contractnli:77:nda-2",
+        "contractnli:77:nda-20",
+        "contractnli:77:nda-3",
+        "contractnli:77:nda-4",
+        "contractnli:77:nda-5",
+        "contractnli:77:nda-7",
+        "contractnli:77:nda-8",
+        "contractnli:99:nda-1",
+        "contractnli:99:nda-10",
+        "contractnli:99:nda-11",
+        "contractnli:99:nda-12",
+        "contractnli:99:nda-13",
+        "contractnli:99:nda-15",
+        "contractnli:99:nda-16",
+        "contractnli:99:nda-17",
+        "contractnli:99:nda-18",
+        "contractnli:99:nda-19",
+        "contractnli:99:nda-2",
+        "contractnli:99:nda-20",
+        "contractnli:99:nda-3",
+        "contractnli:99:nda-4",
+        "contractnli:99:nda-5",
+        "contractnli:99:nda-7",
+        "contractnli:99:nda-8"
+      ]
+    },
+    "subset_policy": "equally spaced input indices, whole document groups retained, no test-label selection",
+    "data_sha256": {
+      "train": "4f5556a388fdc2715f58b132ee70ba61b683066065ea39f2f15fa87edf3ea1e6",
+      "valid": "29413af8a8ddfbedd4e628384b12afefbfff79eafeafc964621a301bd80dbc43",
+      "calibration": "4919733cf955c4a9a07806788c0861c498e6e9a48610b735d8a7c11a2d22ce5e",
+      "test": "97b8b47bc8a4554072c8d583b8d7c0708f5d74829b46b4057a5ad7703091a12a"
+    },
+    "source_sha256": "1eb641a9c04276b1c94242c265cc5b338b36855c7535305e5a97cd86eefd0195",
+    "hardware": {
+      "machine": "arm64",
+      "platform": "macOS-26.5.1-arm64-arm-64bit",
+      "python": "3.12.13"
+    },
+    "test_policy": "fixed budget, final optimizer state, no test-driven checkpoint selection"
+  },
+  "option_ids": [
+    "entailment",
+    "contradiction",
+    "not_mentioned"
+  ],
+  "train_frequency_baseline": {
+    "probabilities": [
+      0.3469387755102041,
+      0.10495626822157435,
+      0.5481049562682215
+    ],
+    "smoothing": "add-one",
+    "count": 170,
+    "accuracy": 0.40588235294117647,
+    "macro_f1": 0.1924686192468619,
+    "log_loss": 1.0066158489243044,
+    "brier": 0.6287144262119675,
+    "brier_definition": "mean sum of squared class probability errors",
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        82
+      ],
+      [
+        0,
+        0,
+        19
+      ],
+      [
+        0,
+        0,
+        69
+      ]
+    ],
+    "ece_10_bins": 0.14222260332704495,
+    "reliability_bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "count": 170,
+        "accuracy": 0.40588235294117647,
+        "mean_confidence": 0.5481049562682214
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      }
+    ]
+  },
+  "tfidf_baseline": {
+    "count": 170,
+    "accuracy": 0.40588235294117647,
+    "macro_f1": 0.1924686192468619,
+    "log_loss": 0.9589512934915055,
+    "brier": 0.5935363509811756,
+    "brier_definition": "mean sum of squared class probability errors",
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        82
+      ],
+      [
+        0,
+        0,
+        19
+      ],
+      [
+        0,
+        0,
+        69
+      ]
+    ],
+    "ece_10_bins": 0.14869231671308156,
+    "reliability_bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "count": 33,
+        "accuracy": 0.12121212121212122,
+        "mean_confidence": 0.480311984693492
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "count": 132,
+        "accuracy": 0.45454545454545453,
+        "mean_confidence": 0.5416495697686932
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "count": 5,
+        "accuracy": 1.0,
+        "mean_confidence": 0.6140689726257753
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      }
+    ],
+    "model_description": "scikit-learn word TF-IDF (1,2) with logistic regression; trained on question and prompt only",
+    "hyperparameters": {
+      "tfidf": {
+        "analyzer": "word",
+        "ngram_range": [
+          1,
+          2
+        ],
+        "sublinear_tf": true
+      },
+      "logistic_regression": {
+        "C": 1,
+        "max_iter": 1000,
+        "random_state": 17
+      }
+    },
+    "vocabulary_size": 11158,
+    "fit_seconds": 0.1621172500308603,
+    "predict_seconds": 0.053974667040165514,
+    "train_count": 340,
+    "test_count": 170,
+    "option_ids": [
+      "entailment",
+      "contradiction",
+      "not_mentioned"
+    ]
+  },
+  "base": {
+    "count": 170,
+    "accuracy": 0.7176470588235294,
+    "macro_f1": 0.5300782714660667,
+    "log_loss": 0.818072582124657,
+    "brier": 0.40858754187449425,
+    "brier_definition": "mean sum of squared class probability errors",
+    "confusion_matrix": [
+      [
+        77,
+        1,
+        4
+      ],
+      [
+        8,
+        1,
+        10
+      ],
+      [
+        25,
+        0,
+        44
+      ]
+    ],
+    "ece_10_bins": 0.14501801922003998,
+    "reliability_bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "count": 1,
+        "accuracy": 0.0,
+        "mean_confidence": 0.39443664024193537
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "count": 6,
+        "accuracy": 0.16666666666666666,
+        "mean_confidence": 0.4638548104544882
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "count": 13,
+        "accuracy": 0.5384615384615384,
+        "mean_confidence": 0.5663331033261312
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "count": 13,
+        "accuracy": 0.38461538461538464,
+        "mean_confidence": 0.6542712066050212
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "count": 17,
+        "accuracy": 0.5882352941176471,
+        "mean_confidence": 0.7518508741396372
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "count": 18,
+        "accuracy": 0.6666666666666666,
+        "mean_confidence": 0.8477865409768248
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "count": 102,
+        "accuracy": 0.8529411764705882,
+        "mean_confidence": 0.9761374425232967
+      }
+    ]
+  },
+  "base_calibrated": {
+    "count": 170,
+    "accuracy": 0.7176470588235294,
+    "macro_f1": 0.5300782714660667,
+    "log_loss": 0.6779518352345041,
+    "brier": 0.38047447640580406,
+    "brier_definition": "mean sum of squared class probability errors",
+    "confusion_matrix": [
+      [
+        77,
+        1,
+        4
+      ],
+      [
+        8,
+        1,
+        10
+      ],
+      [
+        25,
+        0,
+        44
+      ]
+    ],
+    "ece_10_bins": 0.03929776946174083,
+    "reliability_bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "count": 2,
+        "accuracy": 0.0,
+        "mean_confidence": 0.3710312048881421
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "count": 18,
+        "accuracy": 0.3888888888888889,
+        "mean_confidence": 0.4564650696463126
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "count": 27,
+        "accuracy": 0.5185185185185185,
+        "mean_confidence": 0.549247530247902
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "count": 21,
+        "accuracy": 0.6666666666666666,
+        "mean_confidence": 0.6465159395719439
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "count": 21,
+        "accuracy": 0.8095238095238095,
+        "mean_confidence": 0.7549562857030215
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "count": 42,
+        "accuracy": 0.8571428571428571,
+        "mean_confidence": 0.855250399179914
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "count": 39,
+        "accuracy": 0.8717948717948718,
+        "mean_confidence": 0.9293317262749574
+      }
+    ]
+  },
+  "trained": {
+    "count": 170,
+    "accuracy": 0.7235294117647059,
+    "macro_f1": 0.5388915256024891,
+    "log_loss": 1.1223996508663239,
+    "brier": 0.4490161444481684,
+    "brier_definition": "mean sum of squared class probability errors",
+    "confusion_matrix": [
+      [
+        70,
+        1,
+        11
+      ],
+      [
+        3,
+        1,
+        15
+      ],
+      [
+        17,
+        0,
+        52
+      ]
+    ],
+    "ece_10_bins": 0.2007878785079037,
+    "reliability_bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "count": 3,
+        "accuracy": 0.0,
+        "mean_confidence": 0.4785937441007997
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "count": 6,
+        "accuracy": 0.5,
+        "mean_confidence": 0.5624883487088174
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "count": 8,
+        "accuracy": 0.5,
+        "mean_confidence": 0.6419168449928768
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "count": 12,
+        "accuracy": 0.4166666666666667,
+        "mean_confidence": 0.740495685903002
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "count": 10,
+        "accuracy": 0.3,
+        "mean_confidence": 0.8645107660939658
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "count": 131,
+        "accuracy": 0.8244274809160306,
+        "mean_confidence": 0.9897468501532033
+      }
+    ]
+  },
+  "trained_calibrated": {
+    "count": 170,
+    "accuracy": 0.7235294117647059,
+    "macro_f1": 0.5388915256024891,
+    "log_loss": 0.6466719813472391,
+    "brier": 0.3738238331210952,
+    "brier_definition": "mean sum of squared class probability errors",
+    "confusion_matrix": [
+      [
+        70,
+        1,
+        11
+      ],
+      [
+        3,
+        1,
+        15
+      ],
+      [
+        17,
+        0,
+        52
+      ]
+    ],
+    "ece_10_bins": 0.052590182530863366,
+    "reliability_bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "count": 0,
+        "accuracy": null,
+        "mean_confidence": null
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "count": 2,
+        "accuracy": 0.0,
+        "mean_confidence": 0.38752520737560514
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "count": 19,
+        "accuracy": 0.42105263157894735,
+        "mean_confidence": 0.47109054856303034
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "count": 17,
+        "accuracy": 0.47058823529411764,
+        "mean_confidence": 0.5585348056910726
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "count": 14,
+        "accuracy": 0.5714285714285714,
+        "mean_confidence": 0.6430289879403978
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "count": 18,
+        "accuracy": 0.7222222222222222,
+        "mean_confidence": 0.7539721198952154
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "count": 44,
+        "accuracy": 0.8181818181818182,
+        "mean_confidence": 0.8565128239543255
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "count": 56,
+        "accuracy": 0.8928571428571429,
+        "mean_confidence": 0.9367678616567855
+      }
+    ]
+  },
+  "task_metrics": {
+    "base": {
+      "count": 170,
+      "accuracy": 0.7176470588235294,
+      "macro_f1": 0.5300782714660667,
+      "confusion_matrix": [
+        [
+          77,
+          1,
+          4
+        ],
+        [
+          8,
+          1,
+          10
+        ],
+        [
+          25,
+          0,
+          44
+        ]
+      ],
+      "per_class": {
+        "entailment": {
+          "precision": 0.7,
+          "recall": 0.9390243902439024,
+          "f1": 0.8020833333333334,
+          "support": 82
+        },
+        "contradiction": {
+          "precision": 0.5,
+          "recall": 0.05263157894736842,
+          "f1": 0.09523809523809523,
+          "support": 19
+        },
+        "not_mentioned": {
+          "precision": 0.7586206896551724,
+          "recall": 0.6376811594202898,
+          "f1": 0.6929133858267716,
+          "support": 69
+        }
+      },
+      "option_ids": [
+        "entailment",
+        "contradiction",
+        "not_mentioned"
+      ],
+      "confidence_coverage_curve": [
+        {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "error": 0.2823529411764706,
+          "accepted_count": 170
+        },
+        {
+          "threshold": 0.5,
+          "coverage": 0.9588235294117647,
+          "error": 0.25766871165644173,
+          "accepted_count": 163
+        },
+        {
+          "threshold": 0.7,
+          "coverage": 0.8058823529411765,
+          "error": 0.20437956204379562,
+          "accepted_count": 137
+        },
+        {
+          "threshold": 0.8,
+          "coverage": 0.7058823529411765,
+          "error": 0.175,
+          "accepted_count": 120
+        },
+        {
+          "threshold": 0.9,
+          "coverage": 0.6,
+          "error": 0.14705882352941177,
+          "accepted_count": 102
+        },
+        {
+          "threshold": 0.95,
+          "coverage": 0.5,
+          "error": 0.12941176470588237,
+          "accepted_count": 85
+        }
+      ],
+      "coverage_limitation": "Observed confidence coverage and error only; not a risk guarantee.",
+      "per_question": {
+        "nda-1": {
+          "count": 10,
+          "accuracy": 0.6,
+          "macro_f1": 0.47222222222222215,
+          "confusion_matrix": [
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.75,
+              "recall": 0.75,
+              "f1": 0.75,
+              "support": 4
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 3
+            },
+            "not_mentioned": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1": 0.6666666666666666,
+              "support": 3
+            }
+          }
+        },
+        "nda-10": {
+          "count": 10,
+          "accuracy": 0.7,
+          "macro_f1": 0.4468864468864469,
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              5
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.6666666666666666,
+              "recall": 0.5,
+              "f1": 0.5714285714285714,
+              "support": 4
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.7142857142857143,
+              "recall": 0.8333333333333334,
+              "f1": 0.7692307692307693,
+              "support": 6
+            }
+          }
+        },
+        "nda-11": {
+          "count": 10,
+          "accuracy": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 10
+            }
+          }
+        },
+        "nda-12": {
+          "count": 10,
+          "accuracy": 1.0,
+          "macro_f1": 0.6666666666666666,
+          "confusion_matrix": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 5
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 5
+            }
+          }
+        },
+        "nda-13": {
+          "count": 10,
+          "accuracy": 0.9,
+          "macro_f1": 0.5359477124183006,
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.8888888888888888,
+              "recall": 1.0,
+              "f1": 0.9411764705882353,
+              "support": 8
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1": 0.6666666666666666,
+              "support": 2
+            }
+          }
+        },
+        "nda-15": {
+          "count": 10,
+          "accuracy": 0.9,
+          "macro_f1": 0.3157894736842105,
+          "confusion_matrix": [
+            [
+              9,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 1.0,
+              "recall": 0.9,
+              "f1": 0.9473684210526315,
+              "support": 10
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            }
+          }
+        },
+        "nda-16": {
+          "count": 10,
+          "accuracy": 0.4,
+          "macro_f1": 0.19047619047619047,
+          "confusion_matrix": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              6,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.4,
+              "recall": 1.0,
+              "f1": 0.5714285714285714,
+              "support": 4
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 6
+            }
+          }
+        },
+        "nda-17": {
+          "count": 10,
+          "accuracy": 0.3,
+          "macro_f1": 0.3434343434343434,
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              6,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.2222222222222222,
+              "recall": 1.0,
+              "f1": 0.36363636363636365,
+              "support": 2
+            },
+            "contradiction": {
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1": 0.6666666666666666,
+              "support": 2
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 6
+            }
+          }
+        },
+        "nda-18": {
+          "count": 10,
+          "accuracy": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 10
+            }
+          }
+        },
+        "nda-19": {
+          "count": 10,
+          "accuracy": 0.7,
+          "macro_f1": 0.47863247863247865,
+          "confusion_matrix": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              2
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.625,
+              "recall": 1.0,
+              "f1": 0.7692307692307693,
+              "support": 5
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 1
+            },
+            "not_mentioned": {
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1": 0.6666666666666666,
+              "support": 4
+            }
+          }
+        },
+        "nda-2": {
+          "count": 10,
+          "accuracy": 0.4,
+          "macro_f1": 0.19047619047619047,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 6
+            },
+            "not_mentioned": {
+              "precision": 0.4,
+              "recall": 1.0,
+              "f1": 0.5714285714285714,
+              "support": 4
+            }
+          }
+        },
+        "nda-20": {
+          "count": 10,
+          "accuracy": 0.3,
+          "macro_f1": 0.15384615384615385,
+          "confusion_matrix": [
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.3,
+              "recall": 1.0,
+              "f1": 0.46153846153846156,
+              "support": 3
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 3
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 4
+            }
+          }
+        },
+        "nda-3": {
+          "count": 10,
+          "accuracy": 0.8,
+          "macro_f1": 0.5299145299145299,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              2
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.8571428571428571,
+              "recall": 1.0,
+              "f1": 0.9230769230769231,
+              "support": 6
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 1
+            },
+            "not_mentioned": {
+              "precision": 0.6666666666666666,
+              "recall": 0.6666666666666666,
+              "f1": 0.6666666666666666,
+              "support": 3
+            }
+          }
+        },
+        "nda-4": {
+          "count": 10,
+          "accuracy": 0.8,
+          "macro_f1": 0.2962962962962963,
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.8888888888888888,
+              "recall": 0.8888888888888888,
+              "f1": 0.8888888888888888,
+              "support": 9
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 1
+            }
+          }
+        },
+        "nda-5": {
+          "count": 10,
+          "accuracy": 0.8,
+          "macro_f1": 0.2962962962962963,
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.8,
+              "recall": 1.0,
+              "f1": 0.8888888888888888,
+              "support": 8
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 2
+            }
+          }
+        },
+        "nda-7": {
+          "count": 10,
+          "accuracy": 0.7,
+          "macro_f1": 0.2916666666666667,
+          "confusion_matrix": [
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.7777777777777778,
+              "recall": 1.0,
+              "f1": 0.875,
+              "support": 7
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 3
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            }
+          }
+        },
+        "nda-8": {
+          "count": 10,
+          "accuracy": 0.9,
+          "macro_f1": 0.5777777777777778,
+          "confusion_matrix": [
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              2
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.875,
+              "recall": 1.0,
+              "f1": 0.9333333333333333,
+              "support": 7
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1": 0.8,
+              "support": 3
+            }
+          }
+        }
+      },
+      "question_count": 17,
+      "question_row_count": 170,
+      "equal_question_macro_accuracy": 0.7176470588235295,
+      "equal_question_macro_f1": 0.37958800660949626
+    },
+    "base_calibrated": {
+      "count": 170,
+      "accuracy": 0.7176470588235294,
+      "macro_f1": 0.5300782714660667,
+      "confusion_matrix": [
+        [
+          77,
+          1,
+          4
+        ],
+        [
+          8,
+          1,
+          10
+        ],
+        [
+          25,
+          0,
+          44
+        ]
+      ],
+      "per_class": {
+        "entailment": {
+          "precision": 0.7,
+          "recall": 0.9390243902439024,
+          "f1": 0.8020833333333334,
+          "support": 82
+        },
+        "contradiction": {
+          "precision": 0.5,
+          "recall": 0.05263157894736842,
+          "f1": 0.09523809523809523,
+          "support": 19
+        },
+        "not_mentioned": {
+          "precision": 0.7586206896551724,
+          "recall": 0.6376811594202898,
+          "f1": 0.6929133858267716,
+          "support": 69
+        }
+      },
+      "option_ids": [
+        "entailment",
+        "contradiction",
+        "not_mentioned"
+      ],
+      "confidence_coverage_curve": [
+        {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "error": 0.2823529411764706,
+          "accepted_count": 170
+        },
+        {
+          "threshold": 0.5,
+          "coverage": 0.8823529411764706,
+          "error": 0.23333333333333334,
+          "accepted_count": 150
+        },
+        {
+          "threshold": 0.7,
+          "coverage": 0.6,
+          "error": 0.14705882352941177,
+          "accepted_count": 102
+        },
+        {
+          "threshold": 0.8,
+          "coverage": 0.4764705882352941,
+          "error": 0.13580246913580246,
+          "accepted_count": 81
+        },
+        {
+          "threshold": 0.9,
+          "coverage": 0.22941176470588234,
+          "error": 0.1282051282051282,
+          "accepted_count": 39
+        },
+        {
+          "threshold": 0.95,
+          "coverage": 0.047058823529411764,
+          "error": 0.125,
+          "accepted_count": 8
+        }
+      ],
+      "coverage_limitation": "Observed confidence coverage and error only; not a risk guarantee.",
+      "per_question": {
+        "nda-1": {
+          "count": 10,
+          "accuracy": 0.6,
+          "macro_f1": 0.47222222222222215,
+          "confusion_matrix": [
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.75,
+              "recall": 0.75,
+              "f1": 0.75,
+              "support": 4
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 3
+            },
+            "not_mentioned": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1": 0.6666666666666666,
+              "support": 3
+            }
+          }
+        },
+        "nda-10": {
+          "count": 10,
+          "accuracy": 0.7,
+          "macro_f1": 0.4468864468864469,
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              5
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.6666666666666666,
+              "recall": 0.5,
+              "f1": 0.5714285714285714,
+              "support": 4
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.7142857142857143,
+              "recall": 0.8333333333333334,
+              "f1": 0.7692307692307693,
+              "support": 6
+            }
+          }
+        },
+        "nda-11": {
+          "count": 10,
+          "accuracy": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 10
+            }
+          }
+        },
+        "nda-12": {
+          "count": 10,
+          "accuracy": 1.0,
+          "macro_f1": 0.6666666666666666,
+          "confusion_matrix": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 5
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 5
+            }
+          }
+        },
+        "nda-13": {
+          "count": 10,
+          "accuracy": 0.9,
+          "macro_f1": 0.5359477124183006,
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.8888888888888888,
+              "recall": 1.0,
+              "f1": 0.9411764705882353,
+              "support": 8
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1": 0.6666666666666666,
+              "support": 2
+            }
+          }
+        },
+        "nda-15": {
+          "count": 10,
+          "accuracy": 0.9,
+          "macro_f1": 0.3157894736842105,
+          "confusion_matrix": [
+            [
+              9,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 1.0,
+              "recall": 0.9,
+              "f1": 0.9473684210526315,
+              "support": 10
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            }
+          }
+        },
+        "nda-16": {
+          "count": 10,
+          "accuracy": 0.4,
+          "macro_f1": 0.19047619047619047,
+          "confusion_matrix": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              6,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.4,
+              "recall": 1.0,
+              "f1": 0.5714285714285714,
+              "support": 4
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 6
+            }
+          }
+        },
+        "nda-17": {
+          "count": 10,
+          "accuracy": 0.3,
+          "macro_f1": 0.3434343434343434,
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              6,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.2222222222222222,
+              "recall": 1.0,
+              "f1": 0.36363636363636365,
+              "support": 2
+            },
+            "contradiction": {
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1": 0.6666666666666666,
+              "support": 2
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 6
+            }
+          }
+        },
+        "nda-18": {
+          "count": 10,
+          "accuracy": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 10
+            }
+          }
+        },
+        "nda-19": {
+          "count": 10,
+          "accuracy": 0.7,
+          "macro_f1": 0.47863247863247865,
+          "confusion_matrix": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              2
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.625,
+              "recall": 1.0,
+              "f1": 0.7692307692307693,
+              "support": 5
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 1
+            },
+            "not_mentioned": {
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1": 0.6666666666666666,
+              "support": 4
+            }
+          }
+        },
+        "nda-2": {
+          "count": 10,
+          "accuracy": 0.4,
+          "macro_f1": 0.19047619047619047,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 6
+            },
+            "not_mentioned": {
+              "precision": 0.4,
+              "recall": 1.0,
+              "f1": 0.5714285714285714,
+              "support": 4
+            }
+          }
+        },
+        "nda-20": {
+          "count": 10,
+          "accuracy": 0.3,
+          "macro_f1": 0.15384615384615385,
+          "confusion_matrix": [
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.3,
+              "recall": 1.0,
+              "f1": 0.46153846153846156,
+              "support": 3
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 3
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 4
+            }
+          }
+        },
+        "nda-3": {
+          "count": 10,
+          "accuracy": 0.8,
+          "macro_f1": 0.5299145299145299,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              2
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.8571428571428571,
+              "recall": 1.0,
+              "f1": 0.9230769230769231,
+              "support": 6
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 1
+            },
+            "not_mentioned": {
+              "precision": 0.6666666666666666,
+              "recall": 0.6666666666666666,
+              "f1": 0.6666666666666666,
+              "support": 3
+            }
+          }
+        },
+        "nda-4": {
+          "count": 10,
+          "accuracy": 0.8,
+          "macro_f1": 0.2962962962962963,
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.8888888888888888,
+              "recall": 0.8888888888888888,
+              "f1": 0.8888888888888888,
+              "support": 9
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 1
+            }
+          }
+        },
+        "nda-5": {
+          "count": 10,
+          "accuracy": 0.8,
+          "macro_f1": 0.2962962962962963,
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.8,
+              "recall": 1.0,
+              "f1": 0.8888888888888888,
+              "support": 8
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 2
+            }
+          }
+        },
+        "nda-7": {
+          "count": 10,
+          "accuracy": 0.7,
+          "macro_f1": 0.2916666666666667,
+          "confusion_matrix": [
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.7777777777777778,
+              "recall": 1.0,
+              "f1": 0.875,
+              "support": 7
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 3
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            }
+          }
+        },
+        "nda-8": {
+          "count": 10,
+          "accuracy": 0.9,
+          "macro_f1": 0.5777777777777778,
+          "confusion_matrix": [
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              2
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.875,
+              "recall": 1.0,
+              "f1": 0.9333333333333333,
+              "support": 7
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1": 0.8,
+              "support": 3
+            }
+          }
+        }
+      },
+      "question_count": 17,
+      "question_row_count": 170,
+      "equal_question_macro_accuracy": 0.7176470588235295,
+      "equal_question_macro_f1": 0.37958800660949626
+    },
+    "trained": {
+      "count": 170,
+      "accuracy": 0.7235294117647059,
+      "macro_f1": 0.5388915256024891,
+      "confusion_matrix": [
+        [
+          70,
+          1,
+          11
+        ],
+        [
+          3,
+          1,
+          15
+        ],
+        [
+          17,
+          0,
+          52
+        ]
+      ],
+      "per_class": {
+        "entailment": {
+          "precision": 0.7777777777777778,
+          "recall": 0.8536585365853658,
+          "f1": 0.813953488372093,
+          "support": 82
+        },
+        "contradiction": {
+          "precision": 0.5,
+          "recall": 0.05263157894736842,
+          "f1": 0.09523809523809523,
+          "support": 19
+        },
+        "not_mentioned": {
+          "precision": 0.6666666666666666,
+          "recall": 0.7536231884057971,
+          "f1": 0.7074829931972789,
+          "support": 69
+        }
+      },
+      "option_ids": [
+        "entailment",
+        "contradiction",
+        "not_mentioned"
+      ],
+      "confidence_coverage_curve": [
+        {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "error": 0.27647058823529413,
+          "accepted_count": 170
+        },
+        {
+          "threshold": 0.5,
+          "coverage": 0.9823529411764705,
+          "error": 0.2634730538922156,
+          "accepted_count": 167
+        },
+        {
+          "threshold": 0.7,
+          "coverage": 0.9,
+          "error": 0.24183006535947713,
+          "accepted_count": 153
+        },
+        {
+          "threshold": 0.8,
+          "coverage": 0.8294117647058824,
+          "error": 0.2127659574468085,
+          "accepted_count": 141
+        },
+        {
+          "threshold": 0.9,
+          "coverage": 0.7705882352941177,
+          "error": 0.17557251908396945,
+          "accepted_count": 131
+        },
+        {
+          "threshold": 0.95,
+          "coverage": 0.7058823529411765,
+          "error": 0.16666666666666666,
+          "accepted_count": 120
+        }
+      ],
+      "coverage_limitation": "Observed confidence coverage and error only; not a risk guarantee.",
+      "per_question": {
+        "nda-1": {
+          "count": 10,
+          "accuracy": 0.5,
+          "macro_f1": 0.3904761904761904,
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.6666666666666666,
+              "recall": 0.5,
+              "f1": 0.5714285714285714,
+              "support": 4
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 3
+            },
+            "not_mentioned": {
+              "precision": 0.42857142857142855,
+              "recall": 1.0,
+              "f1": 0.6,
+              "support": 3
+            }
+          }
+        },
+        "nda-10": {
+          "count": 10,
+          "accuracy": 0.7,
+          "macro_f1": 0.4468864468864469,
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              5
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.6666666666666666,
+              "recall": 0.5,
+              "f1": 0.5714285714285714,
+              "support": 4
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.7142857142857143,
+              "recall": 0.8333333333333334,
+              "f1": 0.7692307692307693,
+              "support": 6
+            }
+          }
+        },
+        "nda-11": {
+          "count": 10,
+          "accuracy": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 10
+            }
+          }
+        },
+        "nda-12": {
+          "count": 10,
+          "accuracy": 1.0,
+          "macro_f1": 0.6666666666666666,
+          "confusion_matrix": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 5
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 5
+            }
+          }
+        },
+        "nda-13": {
+          "count": 10,
+          "accuracy": 0.4,
+          "macro_f1": 0.25,
+          "confusion_matrix": [
+            [
+              3,
+              0,
+              5
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.75,
+              "recall": 0.375,
+              "f1": 0.5,
+              "support": 8
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.16666666666666666,
+              "recall": 0.5,
+              "f1": 0.25,
+              "support": 2
+            }
+          }
+        },
+        "nda-15": {
+          "count": 10,
+          "accuracy": 0.9,
+          "macro_f1": 0.3157894736842105,
+          "confusion_matrix": [
+            [
+              9,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 1.0,
+              "recall": 0.9,
+              "f1": 0.9473684210526315,
+              "support": 10
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            }
+          }
+        },
+        "nda-16": {
+          "count": 10,
+          "accuracy": 0.4,
+          "macro_f1": 0.19047619047619047,
+          "confusion_matrix": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              6,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.4,
+              "recall": 1.0,
+              "f1": 0.5714285714285714,
+              "support": 4
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 6
+            }
+          }
+        },
+        "nda-17": {
+          "count": 10,
+          "accuracy": 0.6,
+          "macro_f1": 0.6126984126984127,
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              3,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.4,
+              "recall": 1.0,
+              "f1": 0.5714285714285714,
+              "support": 2
+            },
+            "contradiction": {
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1": 0.6666666666666666,
+              "support": 2
+            },
+            "not_mentioned": {
+              "precision": 0.75,
+              "recall": 0.5,
+              "f1": 0.6,
+              "support": 6
+            }
+          }
+        },
+        "nda-18": {
+          "count": 10,
+          "accuracy": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 10
+            }
+          }
+        },
+        "nda-19": {
+          "count": 10,
+          "accuracy": 0.8,
+          "macro_f1": 0.5530303030303031,
+          "confusion_matrix": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.8333333333333334,
+              "recall": 1.0,
+              "f1": 0.9090909090909091,
+              "support": 5
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 1
+            },
+            "not_mentioned": {
+              "precision": 0.75,
+              "recall": 0.75,
+              "f1": 0.75,
+              "support": 4
+            }
+          }
+        },
+        "nda-2": {
+          "count": 10,
+          "accuracy": 0.4,
+          "macro_f1": 0.19047619047619047,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 6
+            },
+            "not_mentioned": {
+              "precision": 0.4,
+              "recall": 1.0,
+              "f1": 0.5714285714285714,
+              "support": 4
+            }
+          }
+        },
+        "nda-20": {
+          "count": 10,
+          "accuracy": 0.5,
+          "macro_f1": 0.38888888888888884,
+          "confusion_matrix": [
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              2,
+              0,
+              2
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1": 0.6666666666666666,
+              "support": 3
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 3
+            },
+            "not_mentioned": {
+              "precision": 0.5,
+              "recall": 0.5,
+              "f1": 0.5,
+              "support": 4
+            }
+          }
+        },
+        "nda-3": {
+          "count": 10,
+          "accuracy": 0.9,
+          "macro_f1": 0.6190476190476191,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 1
+            },
+            "not_mentioned": {
+              "precision": 0.75,
+              "recall": 1.0,
+              "f1": 0.8571428571428571,
+              "support": 3
+            }
+          }
+        },
+        "nda-4": {
+          "count": 10,
+          "accuracy": 0.9,
+          "macro_f1": 0.5359477124183006,
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 1.0,
+              "recall": 0.8888888888888888,
+              "f1": 0.9411764705882353,
+              "support": 9
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1": 0.6666666666666666,
+              "support": 1
+            }
+          }
+        },
+        "nda-5": {
+          "count": 10,
+          "accuracy": 0.8,
+          "macro_f1": 0.2962962962962963,
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.8,
+              "recall": 1.0,
+              "f1": 0.8888888888888888,
+              "support": 8
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 2
+            }
+          }
+        },
+        "nda-7": {
+          "count": 10,
+          "accuracy": 0.6,
+          "macro_f1": 0.2857142857142857,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.8571428571428571,
+              "recall": 0.8571428571428571,
+              "f1": 0.8571428571428571,
+              "support": 7
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 3
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            }
+          }
+        },
+        "nda-8": {
+          "count": 10,
+          "accuracy": 0.9,
+          "macro_f1": 0.5777777777777778,
+          "confusion_matrix": [
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              2
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.875,
+              "recall": 1.0,
+              "f1": 0.9333333333333333,
+              "support": 7
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1": 0.8,
+              "support": 3
+            }
+          }
+        }
+      },
+      "question_count": 17,
+      "question_row_count": 170,
+      "equal_question_macro_accuracy": 0.723529411764706,
+      "equal_question_macro_f1": 0.41099053654143797
+    },
+    "trained_calibrated": {
+      "count": 170,
+      "accuracy": 0.7235294117647059,
+      "macro_f1": 0.5388915256024891,
+      "confusion_matrix": [
+        [
+          70,
+          1,
+          11
+        ],
+        [
+          3,
+          1,
+          15
+        ],
+        [
+          17,
+          0,
+          52
+        ]
+      ],
+      "per_class": {
+        "entailment": {
+          "precision": 0.7777777777777778,
+          "recall": 0.8536585365853658,
+          "f1": 0.813953488372093,
+          "support": 82
+        },
+        "contradiction": {
+          "precision": 0.5,
+          "recall": 0.05263157894736842,
+          "f1": 0.09523809523809523,
+          "support": 19
+        },
+        "not_mentioned": {
+          "precision": 0.6666666666666666,
+          "recall": 0.7536231884057971,
+          "f1": 0.7074829931972789,
+          "support": 69
+        }
+      },
+      "option_ids": [
+        "entailment",
+        "contradiction",
+        "not_mentioned"
+      ],
+      "confidence_coverage_curve": [
+        {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "error": 0.27647058823529413,
+          "accepted_count": 170
+        },
+        {
+          "threshold": 0.5,
+          "coverage": 0.8764705882352941,
+          "error": 0.22818791946308725,
+          "accepted_count": 149
+        },
+        {
+          "threshold": 0.7,
+          "coverage": 0.6941176470588235,
+          "error": 0.16101694915254236,
+          "accepted_count": 118
+        },
+        {
+          "threshold": 0.8,
+          "coverage": 0.5882352941176471,
+          "error": 0.14,
+          "accepted_count": 100
+        },
+        {
+          "threshold": 0.9,
+          "coverage": 0.32941176470588235,
+          "error": 0.10714285714285714,
+          "accepted_count": 56
+        },
+        {
+          "threshold": 0.95,
+          "coverage": 0.11176470588235295,
+          "error": 0.05263157894736842,
+          "accepted_count": 19
+        }
+      ],
+      "coverage_limitation": "Observed confidence coverage and error only; not a risk guarantee.",
+      "per_question": {
+        "nda-1": {
+          "count": 10,
+          "accuracy": 0.5,
+          "macro_f1": 0.3904761904761904,
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.6666666666666666,
+              "recall": 0.5,
+              "f1": 0.5714285714285714,
+              "support": 4
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 3
+            },
+            "not_mentioned": {
+              "precision": 0.42857142857142855,
+              "recall": 1.0,
+              "f1": 0.6,
+              "support": 3
+            }
+          }
+        },
+        "nda-10": {
+          "count": 10,
+          "accuracy": 0.7,
+          "macro_f1": 0.4468864468864469,
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              5
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.6666666666666666,
+              "recall": 0.5,
+              "f1": 0.5714285714285714,
+              "support": 4
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.7142857142857143,
+              "recall": 0.8333333333333334,
+              "f1": 0.7692307692307693,
+              "support": 6
+            }
+          }
+        },
+        "nda-11": {
+          "count": 10,
+          "accuracy": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 10
+            }
+          }
+        },
+        "nda-12": {
+          "count": 10,
+          "accuracy": 1.0,
+          "macro_f1": 0.6666666666666666,
+          "confusion_matrix": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 5
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 5
+            }
+          }
+        },
+        "nda-13": {
+          "count": 10,
+          "accuracy": 0.4,
+          "macro_f1": 0.25,
+          "confusion_matrix": [
+            [
+              3,
+              0,
+              5
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.75,
+              "recall": 0.375,
+              "f1": 0.5,
+              "support": 8
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.16666666666666666,
+              "recall": 0.5,
+              "f1": 0.25,
+              "support": 2
+            }
+          }
+        },
+        "nda-15": {
+          "count": 10,
+          "accuracy": 0.9,
+          "macro_f1": 0.3157894736842105,
+          "confusion_matrix": [
+            [
+              9,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 1.0,
+              "recall": 0.9,
+              "f1": 0.9473684210526315,
+              "support": 10
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            }
+          }
+        },
+        "nda-16": {
+          "count": 10,
+          "accuracy": 0.4,
+          "macro_f1": 0.19047619047619047,
+          "confusion_matrix": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              6,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.4,
+              "recall": 1.0,
+              "f1": 0.5714285714285714,
+              "support": 4
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 6
+            }
+          }
+        },
+        "nda-17": {
+          "count": 10,
+          "accuracy": 0.6,
+          "macro_f1": 0.6126984126984127,
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              3,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.4,
+              "recall": 1.0,
+              "f1": 0.5714285714285714,
+              "support": 2
+            },
+            "contradiction": {
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1": 0.6666666666666666,
+              "support": 2
+            },
+            "not_mentioned": {
+              "precision": 0.75,
+              "recall": 0.5,
+              "f1": 0.6,
+              "support": 6
+            }
+          }
+        },
+        "nda-18": {
+          "count": 10,
+          "accuracy": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 10
+            }
+          }
+        },
+        "nda-19": {
+          "count": 10,
+          "accuracy": 0.8,
+          "macro_f1": 0.5530303030303031,
+          "confusion_matrix": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.8333333333333334,
+              "recall": 1.0,
+              "f1": 0.9090909090909091,
+              "support": 5
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 1
+            },
+            "not_mentioned": {
+              "precision": 0.75,
+              "recall": 0.75,
+              "f1": 0.75,
+              "support": 4
+            }
+          }
+        },
+        "nda-2": {
+          "count": 10,
+          "accuracy": 0.4,
+          "macro_f1": 0.19047619047619047,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 6
+            },
+            "not_mentioned": {
+              "precision": 0.4,
+              "recall": 1.0,
+              "f1": 0.5714285714285714,
+              "support": 4
+            }
+          }
+        },
+        "nda-20": {
+          "count": 10,
+          "accuracy": 0.5,
+          "macro_f1": 0.38888888888888884,
+          "confusion_matrix": [
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              2,
+              0,
+              2
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1": 0.6666666666666666,
+              "support": 3
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 3
+            },
+            "not_mentioned": {
+              "precision": 0.5,
+              "recall": 0.5,
+              "f1": 0.5,
+              "support": 4
+            }
+          }
+        },
+        "nda-3": {
+          "count": 10,
+          "accuracy": 0.9,
+          "macro_f1": 0.6190476190476191,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 1
+            },
+            "not_mentioned": {
+              "precision": 0.75,
+              "recall": 1.0,
+              "f1": 0.8571428571428571,
+              "support": 3
+            }
+          }
+        },
+        "nda-4": {
+          "count": 10,
+          "accuracy": 0.9,
+          "macro_f1": 0.5359477124183006,
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 1.0,
+              "recall": 0.8888888888888888,
+              "f1": 0.9411764705882353,
+              "support": 9
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1": 0.6666666666666666,
+              "support": 1
+            }
+          }
+        },
+        "nda-5": {
+          "count": 10,
+          "accuracy": 0.8,
+          "macro_f1": 0.2962962962962963,
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.8,
+              "recall": 1.0,
+              "f1": 0.8888888888888888,
+              "support": 8
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 2
+            }
+          }
+        },
+        "nda-7": {
+          "count": 10,
+          "accuracy": 0.6,
+          "macro_f1": 0.2857142857142857,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.8571428571428571,
+              "recall": 0.8571428571428571,
+              "f1": 0.8571428571428571,
+              "support": 7
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 3
+            },
+            "not_mentioned": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            }
+          }
+        },
+        "nda-8": {
+          "count": 10,
+          "accuracy": 0.9,
+          "macro_f1": 0.5777777777777778,
+          "confusion_matrix": [
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              2
+            ]
+          ],
+          "per_class": {
+            "entailment": {
+              "precision": 0.875,
+              "recall": 1.0,
+              "f1": 0.9333333333333333,
+              "support": 7
+            },
+            "contradiction": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "not_mentioned": {
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1": 0.8,
+              "support": 3
+            }
+          }
+        }
+      },
+      "question_count": 17,
+      "question_row_count": 170,
+      "equal_question_macro_accuracy": 0.723529411764706,
+      "equal_question_macro_f1": 0.41099053654143797
+    }
+  },
+  "temperature": 2.8250112810384214,
+  "base_temperature": 1.8896014477960483,
+  "adapter_sha256": "7bb11aca0a691d3aa060b4acf368fa2eb959eb394f3d59c4c0ea145fba999cde",
+  "changed_adapter_tensor_count": 30,
+  "validation_loss_before": 0.734458004056839,
+  "validation_loss_after": 1.0044152201502423,
+  "validation_improved": false,
+  "elapsed_seconds_including_model_load": 905.0503408749937,
+  "limitations": [
+    "Fixed-budget single-seed demos, not full benchmark or state-of-the-art claims.",
+    "Public data may have occurred in model pretraining; within-experiment split hygiene cannot eliminate pretraining contamination.",
+    "Training uses train/valid only; temperatures use calibration only; test scores must not guide tuning.",
+    "Scalar temperature preserves argmax and cannot repair an incorrect ranking or guarantee future correctness."
+  ]
+}

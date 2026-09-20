@@ -1,0 +1,538 @@
+{
+  "format": "ifllm-learn.bitcoin.v1",
+  "sources": [
+    {
+      "month": "2023-01",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-01.zip",
+      "sha256": "ea8caf7fd56c7f7143723f56f8d12a2fc0b643badbcdae5c660db2d11454a11d",
+      "bytes": 44765,
+      "quality": {
+        "expected_hours": 744,
+        "observed_hours": 744,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2023-02",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-02.zip",
+      "sha256": "53525b700548a19488fcb8754778acdf7941c9ba0b6e7eb548a51a376ef8d86b",
+      "bytes": 40955,
+      "quality": {
+        "expected_hours": 672,
+        "observed_hours": 672,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2023-03",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-03.zip",
+      "sha256": "7f2afb8e0179a57ac31eab5205660298ba5eb77039ac2e21aef9b715ff3d06ce",
+      "bytes": 44928,
+      "quality": {
+        "expected_hours": 744,
+        "observed_hours": 743,
+        "missing_hours": [
+          "2023-03-24T13:00:00+00:00"
+        ],
+        "incomplete_hours": [
+          "2023-03-24T12:00:00+00:00"
+        ],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2023-04",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-04.zip",
+      "sha256": "1787dc83836deafaa77d4276cbe3b3ca1fe0083b3017079e3560605ff4f7a4ba",
+      "bytes": 41904,
+      "quality": {
+        "expected_hours": 720,
+        "observed_hours": 720,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2023-05",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-05.zip",
+      "sha256": "16b33557a4a4040fc56c711f4b1a750ebafb5a7f8dd46c060d9fc8c66cdc1982",
+      "bytes": 43095,
+      "quality": {
+        "expected_hours": 744,
+        "observed_hours": 744,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2023-06",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-06.zip",
+      "sha256": "05f87fb5f004ee0aff019adb7015afab8df0baaaf2b77154d75ae53e18d59b11",
+      "bytes": 41669,
+      "quality": {
+        "expected_hours": 720,
+        "observed_hours": 720,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2023-07",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-07.zip",
+      "sha256": "f49a738a793055a583784e78a54840a43861fd110118cbe1add14ef1afb63032",
+      "bytes": 42245,
+      "quality": {
+        "expected_hours": 744,
+        "observed_hours": 744,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2023-08",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-08.zip",
+      "sha256": "e983243d44536a06ff4707cf35df29f636fe788e6fb69c3b3feed2ef43d343d4",
+      "bytes": 42213,
+      "quality": {
+        "expected_hours": 744,
+        "observed_hours": 744,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2023-09",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-09.zip",
+      "sha256": "28e12ccaf15745bfe11f570b9079793750047fde3d340fe0231858b26bc0f9d9",
+      "bytes": 40962,
+      "quality": {
+        "expected_hours": 720,
+        "observed_hours": 720,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2023-10",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-10.zip",
+      "sha256": "165ec50601f914d6c41b776414096bc73974bf45fcd41aaddfedd1cf66cb6c6e",
+      "bytes": 42928,
+      "quality": {
+        "expected_hours": 744,
+        "observed_hours": 744,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2023-11",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-11.zip",
+      "sha256": "4f550d182d529839dd9cfc28ef0ecca8cd8003e991067e92a2af5b9e92762f49",
+      "bytes": 41648,
+      "quality": {
+        "expected_hours": 720,
+        "observed_hours": 720,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2023-12",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-12.zip",
+      "sha256": "6117d93e3eb6574df6b0087a45cf12e171afe91789b523b0bfcce00d8f1b6e37",
+      "bytes": 43309,
+      "quality": {
+        "expected_hours": 744,
+        "observed_hours": 744,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2024-01",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-01.zip",
+      "sha256": "cf873a185bd5b24b8e00034e49583fcb49928e0c3a45c6fc27a632a683655417",
+      "bytes": 43482,
+      "quality": {
+        "expected_hours": 744,
+        "observed_hours": 744,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2024-02",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-02.zip",
+      "sha256": "b83aa7319ef1d4baa7b923c0fe802b88dfaf241c7456af295f1f656a24379b33",
+      "bytes": 40711,
+      "quality": {
+        "expected_hours": 696,
+        "observed_hours": 696,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2024-03",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-03.zip",
+      "sha256": "b0851daf609d6ab82fdf8f1d1c4fbd974bc1b4e6530a832067516ac1c2be63a6",
+      "bytes": 44044,
+      "quality": {
+        "expected_hours": 744,
+        "observed_hours": 744,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2024-04",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-04.zip",
+      "sha256": "e266707ad2ea3cd4680bf1ac5025f0c1bfeb38e703374a91f8dc193d1ec8d48f",
+      "bytes": 42474,
+      "quality": {
+        "expected_hours": 720,
+        "observed_hours": 720,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2024-05",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-05.zip",
+      "sha256": "077c71eec71a8ecf2edb6e3a3927b600b8f358fd37066ce120c19fb5302a9ab8",
+      "bytes": 43425,
+      "quality": {
+        "expected_hours": 744,
+        "observed_hours": 744,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2024-06",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-06.zip",
+      "sha256": "2e1f968fa34b9feabfb19cc6eec47a146e20d64a706f4b17d0babf4d2f475c39",
+      "bytes": 41535,
+      "quality": {
+        "expected_hours": 720,
+        "observed_hours": 720,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2024-07",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-07.zip",
+      "sha256": "41fd58a70ae40bebb74682555cc5054709f8dde0f5c8193ae2103dac95274e5f",
+      "bytes": 43162,
+      "quality": {
+        "expected_hours": 744,
+        "observed_hours": 744,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2024-08",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-08.zip",
+      "sha256": "88521a975ee7bfdd21f891d81f4243a01b90b977cf525d11747e27c66e3bad60",
+      "bytes": 43406,
+      "quality": {
+        "expected_hours": 744,
+        "observed_hours": 744,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2024-09",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-09.zip",
+      "sha256": "123f402c6dbf19b9b72b4af7ad4d5325c73ba4833148cc398b803d7a34ac5c5f",
+      "bytes": 41468,
+      "quality": {
+        "expected_hours": 720,
+        "observed_hours": 720,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2024-10",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-10.zip",
+      "sha256": "393b18ad2634f0cd3b2fd54321c8286ea143419cf3129b4cc44e089681912b03",
+      "bytes": 42989,
+      "quality": {
+        "expected_hours": 744,
+        "observed_hours": 744,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2024-11",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-11.zip",
+      "sha256": "7a51fe8811c754ff43a2be0ba10e53a6d4218521e27ac765fbc9a1ca0fc15bac",
+      "bytes": 42752,
+      "quality": {
+        "expected_hours": 720,
+        "observed_hours": 720,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2024-12",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-12.zip",
+      "sha256": "dfec812f73a84257b195cbdaed34d020fa77e845625c061c13bd6a60e7ef9372",
+      "bytes": 44271,
+      "quality": {
+        "expected_hours": 744,
+        "observed_hours": 744,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2025-01",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2025-01.zip",
+      "sha256": "e7f2aaa5396a8062a57ab29ce9fab2d76b2c84ec58815d4ab7b3fe16f78c7118",
+      "bytes": 44655,
+      "quality": {
+        "expected_hours": 744,
+        "observed_hours": 744,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2025-02",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2025-02.zip",
+      "sha256": "7420f55c93f61d7e734fc9d2507c7f2fcb5eaf48112277cecd241d4e1dbf3bd5",
+      "bytes": 40203,
+      "quality": {
+        "expected_hours": 672,
+        "observed_hours": 672,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2025-03",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2025-03.zip",
+      "sha256": "b5ae8bb57e5e526c2050c9f8229b723871a5af47d80c53453abf61847a5f3aa6",
+      "bytes": 44468,
+      "quality": {
+        "expected_hours": 744,
+        "observed_hours": 744,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2025-04",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2025-04.zip",
+      "sha256": "bbec48ed5f7b603bbceff943ad0dccd3c29cae6d14161bcd2eabc9f762ff0a35",
+      "bytes": 42741,
+      "quality": {
+        "expected_hours": 720,
+        "observed_hours": 720,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2025-05",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2025-05.zip",
+      "sha256": "da6213bf4c57ea60faed3ef1f6a0ecb87f22ca7a3a67614604cf44d2d6b265fe",
+      "bytes": 44381,
+      "quality": {
+        "expected_hours": 744,
+        "observed_hours": 744,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2025-06",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2025-06.zip",
+      "sha256": "d0760943538f48032dd066401e53f46bbf4868e6545929678e23bcdee032a5e8",
+      "bytes": 42662,
+      "quality": {
+        "expected_hours": 720,
+        "observed_hours": 720,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2025-07",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2025-07.zip",
+      "sha256": "487738ee596380eaad32a2a93c75d17e1ebdd165a9b544c0e44be36079f5c02e",
+      "bytes": 43886,
+      "quality": {
+        "expected_hours": 744,
+        "observed_hours": 744,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2025-08",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2025-08.zip",
+      "sha256": "a99ec5bac64333fb521b2ab1bac5e8387eede6413cc7841656a02be95613c64f",
+      "bytes": 44104,
+      "quality": {
+        "expected_hours": 744,
+        "observed_hours": 744,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2025-09",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2025-09.zip",
+      "sha256": "b0ad5b54097f6adb440d07204fd215dae9b224fb73569fd4309a55c9234d46b3",
+      "bytes": 42491,
+      "quality": {
+        "expected_hours": 720,
+        "observed_hours": 720,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2025-10",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2025-10.zip",
+      "sha256": "5426b1b48905963d50e11d1243910b5fa05a89c9a2003bcd5082561d352a2123",
+      "bytes": 44751,
+      "quality": {
+        "expected_hours": 744,
+        "observed_hours": 744,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2025-11",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2025-11.zip",
+      "sha256": "1f28f02e33e1f19e5163cd45b67c07b3b75870e78dbbf9f861d1348ca372d942",
+      "bytes": 43273,
+      "quality": {
+        "expected_hours": 720,
+        "observed_hours": 720,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    },
+    {
+      "month": "2025-12",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2025-12.zip",
+      "sha256": "d546c6e44b443e34cef5122043c5cdd3b9c76980e23cc408dafd9f6f76d65c05",
+      "bytes": 43894,
+      "quality": {
+        "expected_hours": 744,
+        "observed_hours": 744,
+        "missing_hours": [],
+        "incomplete_hours": [],
+        "policy": "No imputation; exclude every example whose lookback or label horizon intersects a missing/incomplete hour."
+      }
+    }
+  ],
+  "candle_count": 26303,
+  "lookback_hours": 168,
+  "horizon_hours": 24,
+  "decision_interval_hours": 24,
+  "label_threshold": 0.01,
+  "omitted": {
+    "lookback": 7,
+    "horizon": 0,
+    "outage_window": 8
+  },
+  "boundary_purged": {
+    "train": 1,
+    "valid": 1,
+    "calibration": 1,
+    "test": 1
+  },
+  "split_upper_bounds_exclusive": {
+    "train": "2025-01-01T00:00:00+00:00",
+    "valid": "2025-04-01T00:00:00+00:00",
+    "calibration": "2025-07-01T00:00:00+00:00",
+    "test": "2026-01-01T00:00:00+00:00"
+  },
+  "counts": {
+    "train": 715,
+    "valid": 89,
+    "calibration": 90,
+    "test": 183
+  },
+  "class_counts": {
+    "train": {
+      "up": 223,
+      "flat": 312,
+      "down": 180
+    },
+    "valid": {
+      "up": 25,
+      "flat": 36,
+      "down": 28
+    },
+    "calibration": {
+      "up": 25,
+      "flat": 45,
+      "down": 20
+    },
+    "test": {
+      "up": 48,
+      "flat": 84,
+      "down": 51
+    }
+  },
+  "sha256": {
+    "train.jsonl": "bdf1135fe5f77ad5c11a017ec408bcabecd90c7fa75081de08605cdf6e7f8a49",
+    "valid.jsonl": "d1068427c1c648902acfd83e9107aa2a879789f11cff50d93fadadf1477237bf",
+    "calibration.jsonl": "e426e47a658bf515c72b4810dbf60ab199fd69137e3752e08bea776714dff6ae",
+    "test.jsonl": "f531f5655af45c50c66d04c66903b4ad7300ec114a772148d9d6f55beeee795f"
+  },
+  "limitations": [
+    "Historical BTC information may have occurred in base-model pretraining; this is not a prospective forecast trial.",
+    "Classification only, no trading, execution-price assumptions or profitability claims.",
+    "Calibrated confidence is not guaranteed under future distribution shift."
+  ]
+}

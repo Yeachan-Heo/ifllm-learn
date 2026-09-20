@@ -1,0 +1,27 @@
+{
+  "format": "ifllm-learn.evidence.v1",
+  "files": {
+    "report.json": "43c7cdb1945f24e9974fc0e179f741f6b6da7cb7bab3958ab0114bf54a836681",
+    "run.json": "14e4168b1dc08850d36a9d30eebf656da21c5a0bd163dcbf6cd01dd00631a7ec",
+    "training.json": "29325d119e39057986fc125d83aef76156ec13f1c5734f4a04ab6e9a1bad0aff",
+    "adapter_config.json": "07e0139f3dbaf12b8dc9b3665583fb89eff239c4b964f77d96c10f3a648246ed",
+    "temperature.json": "766c35d1012d11d10faaaf2670b9c3f33d2cc1aa1f7b22899cf41ec08a1fd466",
+    "reload-verification.json": "ab634964d65bd74383a5f751117d50b483dcbe00a3c2a2efb4713dbb37b18410",
+    "dataset-manifest.json": "953b7cb8d29fb5919ca25f217690db53fac93ad408a4adf453a73fe63418c3a5",
+    "base-test.jsonl": "46db7908c2574b5f921fce8400f6160c96fa600f7eef959d24bc952942111583",
+    "trained-test.jsonl": "20cacfbdbc2964c96f9e18da13468062190639407418ab9f34fe590a67a5998e",
+    "calibrated-test.jsonl": "a41e599b2f08d087107f1f59b2f4919182ea38213aec842589697efc31e5894f",
+    "trained-calibration.jsonl": "070cd58e90925173ada7f7628efbba4a4af02302a62f72453f2ecc277df36f69",
+    "base-temperature.json": "32a16cc8fc6d456e66a719ac021cb56249085dbd11b38b3e1e0fd5964ffc8452",
+    "base-calibration.jsonl": "b624d0a461c04bd2eb93b4c4fbceb72915565b7138728a3d397afbad70723847",
+    "base-calibrated-test.jsonl": "c82cca9b57bb3e6f6dc74e1d435d8b09724bf68fbc245c0a1e55e83ca49411d8",
+    "tfidf-baseline.json": "ba3df12cccfdffffa230a04d38fee66aab691f642a63e9c76bcd4e665c9ae040"
+  },
+  "excludes": [
+    "source document text fields",
+    "raw downloaded datasets",
+    "model weights",
+    "adapter weights"
+  ],
+  "note": "Structured provenance filtering is not a general-purpose secret scanner. IDs and approved descriptions are retained. Hashes identify artifacts, not model quality."
+}
