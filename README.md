@@ -53,7 +53,7 @@ python3 examples/build_visual_demo.py          # rebuild assets
 python3 examples/build_visual_demo.py --check  # reject stale visuals
 ```
 
-The local viewer does not publish the private repository or enable GitHub Pages.
+The local viewer does not publish repository files or enable GitHub Pages.
 
 ## What you get
 
@@ -395,6 +395,15 @@ training/inference prompt alignment, group and temporal leakage, dataset source
 validation, calibration identity, and metric edge cases. Tiny-model tests do not
 download the 4B checkpoint. MLX-specific tests require Apple Silicon; CPU-only
 preparation/evaluation tests remain separate from native inference.
+
+## License
+
+The original project code is released under the [MIT License](LICENSE).
+Copyright (c) 2026 **Bellman (Yeachan-Heo)**.
+
+This does not relicense third-party datasets, pretrained model weights, or
+dependencies. Their original licenses and attribution requirements still apply,
+including the dataset terms listed below.
 
 ## Sources and attribution
 
